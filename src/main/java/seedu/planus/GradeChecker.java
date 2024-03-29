@@ -180,6 +180,7 @@ public class GradeChecker {
         int termMCs = 0;
         int termMCsWithoutSU = 0;
         double termGrade = 0.00;
+        int index = timetable.searchTimetableIndex(year, term);
 
         StringBuilder plan = new StringBuilder();
 
