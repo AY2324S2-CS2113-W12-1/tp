@@ -123,7 +123,7 @@ The Ui class is implemented with static methods to facilitate easy access to use
 needing to instantiate the class. It manages a variety of messages that inform the user about the outcome of their 
 commands, guide them on the correct command syntax, and display error messages for incorrect inputs.
 
-![UiClassDiagram.png](..%2F..%2FDownloads%2FUiClassDiagram.png)
+![Ui_ClassDiagram](uml/UiClassDiagram.png)
 
 <br>
 
