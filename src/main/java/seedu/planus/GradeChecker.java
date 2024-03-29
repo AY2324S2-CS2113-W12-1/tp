@@ -15,6 +15,7 @@ public class GradeChecker {
      * @return A string with the grades
      */
     public static String checkGrade(Timetable timetable) {
+        assert timetable != null : "Timetable provided cannot be null.";
         int totalMCs = 0;
         int totalMCsWithoutSU = 0;
         int yearMCs = 0;
@@ -40,6 +41,7 @@ public class GradeChecker {
                         .append(System.lineSeparator());
 
                 for (Course course : timetable.courses.get(index)) {
+                    assert course.getModularCredit() >= 0 : "Modular credits for a course should be non-negative.";
                     plan.append("  ").append(course.getGrade()).append(System.lineSeparator());
                     if (course.getLetterGrade() == null) {
                         continue;
@@ -87,7 +89,7 @@ public class GradeChecker {
         if (totalMCsWithoutSU != 0) {
             cumulativeGPA = totalGrade / totalMCsWithoutSU;
         }
-        assert cumulativeGPA >= 0.00 : "The cumulative GPA should be non-negative.";
+        assert cumulativeGPA >= 0.00 && cumulativeGPA <= 5.00 : "Cumulative GPA is out of bounds.";
         plan.append("Total GPA: ").append(cumulativeGPA).append(System.lineSeparator()).append(System.lineSeparator());
 
         return plan.toString();
@@ -101,6 +103,7 @@ public class GradeChecker {
      * @return A string with the year's grades
      */
     public static String checkGrade(Timetable timetable, int year) {
+        assert year >= 1 && year <= MAX_CANDIDATURE_YEAR : "Year parameter is out of valid range.";
         int yearMCs = 0;
         int yearMCsWithoutSU = 0;
         int termMCs = 0;
@@ -122,6 +125,7 @@ public class GradeChecker {
                     .append(System.lineSeparator());
 
             for (Course course : timetable.courses.get(index)) {
+                assert course.getModularCredit() >= 0 : "Modular credits for a course should be non-negative.";
                 plan.append("  ").append(course.getGrade()).append(System.lineSeparator());
                 if (course.getLetterGrade() == null) {
                     continue;
@@ -171,6 +175,8 @@ public class GradeChecker {
      * @return A string with the term's grades
      */
     public static String checkGrade(Timetable timetable, int year, int term) {
+        assert year >= 1 && year <= MAX_CANDIDATURE_YEAR : "Year parameter is out of valid range.";
+        assert term >= 1 && term <= TERM_PER_YEAR : "Term parameter is out of valid range.";
         int termMCs = 0;
         int termMCsWithoutSU = 0;
         double termGrade = 0.00;
@@ -181,6 +187,7 @@ public class GradeChecker {
         plan.append(timetable.courses.get(index).get(0).getYearAndTerm()).append(":").append(System.lineSeparator());
 
         for (Course course : timetable.courses.get(index)) {
+            assert course.getModularCredit() >= 0 : "Modular credits for a course should be non-negative.";
             plan.append("  ").append(course.getGrade()).append(System.lineSeparator());
             if (course.getLetterGrade() == null) {
                 continue;
