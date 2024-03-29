@@ -176,10 +176,10 @@ public class GradeChecker {
      */
     public static String checkGrade(Timetable timetable, int year, int term) {
         assert year >= 1 && year <= MAX_CANDIDATURE_YEAR : "Year parameter is out of valid range.";
-        assert term >= 1 && term <= TERM_PER_YEAR : "Term parameter is out of valid range.";int termMCs = 0;
+        assert term >= 1 && term <= TERM_PER_YEAR : "Term parameter is out of valid range.";
+        int termMCs = 0;
         int termMCsWithoutSU = 0;
         double termGrade = 0.00;
-        int index = timetable.searchTimetableIndex(year, term);
 
         StringBuilder plan = new StringBuilder();
 
