@@ -60,6 +60,7 @@ public class Ui {
                 "    rm course [course code]\n        e.g. rm course CS1010\n" +
                 "    rm grade [course code]\n        e.g. rm grade CS1010\n" +
                 "    change grade [course code] [letter grade]\n        e.g. change grade CS1010 A\n" +
+                "    change timetable [timetable index]\n        e.g. change timetable 1\n" +
                 "    check y/[year]\n        e.g. check y/1\n" +
                 "    check y/[year] t/[term]\n        e.g. check y/1 t/1\n" +
                 "    view y/[year]\n        e.g. view y/1\n" +
