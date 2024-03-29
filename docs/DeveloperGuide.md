@@ -118,6 +118,15 @@ There are 3 overloaded variations of the `checkGrade()` method in the `GradeChec
 The first only takes in Timetable `timetable`, which records the current plan of the user.
 The second takes in an additional integer `year`, while the third takes in two additional integers `year` and `term`.
 
+### Ui Component
+The Ui class is implemented with static methods to facilitate easy access to user interface functionalities without
+needing to instantiate the class. It manages a variety of messages that inform the user about the outcome of their 
+commands, guide them on the correct command syntax, and display error messages for incorrect inputs.
+
+![Ui_ClassDiagram](uml/UiClassDiagram.png)
+
+<br>
+
 ## Product scope
 ### Target user profile
 
