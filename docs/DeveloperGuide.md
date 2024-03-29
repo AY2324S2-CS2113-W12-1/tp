@@ -5,6 +5,24 @@
 {list here sources of all reused/adapted ideas, code, documentation, and third-party libraries -- include links to the original source as well}
 
 ## Design & implementation
+
+### Parser component
+The Parser is essential to interpreting user commands and executing appropriate actions on the timetable. 
+This includes command parsing; breaking down user inputs into commands and parameters that PlaNus can understand and
+act upon.
+
+Parser interacts with the following classes.
+- 'Course': Creates Courses based on user input
+- 'Timetable': Modifies timetable based on user input
+- 'Storage': Uses Storage to save user data
+- 'UI': Uses Ui to display error messages
+
+Below is the class diagram:
+
+![Parser_ClassDiagram](uml/Parser_ClassDiagram.png)
+
+<br>
+
 ### Timetable plan component
 In order to keep track of the timetable plan of the user, 3 classes are used mainly.
 - `Course`: Represents a course taken or planned by the user

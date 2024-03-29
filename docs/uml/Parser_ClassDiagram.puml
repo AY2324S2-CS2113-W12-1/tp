@@ -1,0 +1,33 @@
+@startuml
+class Parser {
+  +parseCommand(String line, Timetable timetable) : boolean
+}
+class Timetable {
+  +addCourse(Course course)
+  +removeCourse(String courseCode)
+  +addGrade(String courseCode, String grade)
+  +removeGrade(String courseCode)
+}
+class Course {
+  -courseCode : String
+  -courseName : String
+  -mc : int
+  -year : int
+  -term : int
+  +Course(String courseCode, String courseName, int mc, int year, int term)
+}
+class Storage {
+  +loadTimetable(String timetableName) : Timetable
+  +writeToFile(Timetable timetable)
+}
+class Ui {
+  {static} INVALID_COMMAND : String
+  {static} MISSING_MAJOR : String
+  {static} +printHelp()
+}
+
+Parser --> Timetable : modifies
+Parser --> Course : creates
+Parser --> Storage : uses
+Parser --> Ui : uses for errors
+@enduml
