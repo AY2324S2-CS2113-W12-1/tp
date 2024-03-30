@@ -148,6 +148,13 @@ public class Ui {
         System.out.println("Failed writing timetable to file.");
     }
 
+    public static void printCourseNotExist() {
+        System.out.println("Course you wish to add does not exist in our database, please provide the course name:");
+    }
+    public static void printFailedSearchingInDatabase() {
+        System.out.println("Searching course in database failed.");
+    }
+
     //@@author cirelesna
     public static String getUserCommand() {
         System.out.print("Command: ");
