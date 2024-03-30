@@ -35,6 +35,18 @@ public class Timetable {
             throw new Exception("Year provided is not from 1 to 6");
         }
 
+        //check if the course is already added to avoid duplicated courses in the timetable
+        for (ArrayList<Course> termCourses: courses) {
+            for (Course existingCourse: termCourses) {
+                String existingCourseCode = existingCourse.getCourseCode();
+                String courseCode = course.getCourseCode();
+                if (existingCourseCode.equals(courseCode)) {
+                    Ui.printCourseAlreadyAdded();
+                    return;
+                }
+            }
+        }
+
         boolean hasYearAndTerm = false;
         int newCourseYearAndTerm = 4 * (course.getYear() - 1) + course.getTerm();
 

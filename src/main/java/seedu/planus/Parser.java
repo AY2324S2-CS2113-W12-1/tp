@@ -223,6 +223,7 @@ public class Parser {
             Ui.printHelp();
             return false;
         case "bye":
+            Storage.writeToFile(timetable);
             logger.log(Level.INFO, "Exiting PlaNus");
             return true;
         default:

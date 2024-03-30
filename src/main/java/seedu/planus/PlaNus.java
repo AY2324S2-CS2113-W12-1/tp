@@ -49,7 +49,7 @@ public class PlaNus {
     }
 
     /**
-     * Runs the PlaNus application.
+     * Runs the PlaNUS application.
      */
     public void run() {
         setUpLogger();

@@ -155,6 +155,12 @@ public class Ui {
         System.out.println("Searching course in database failed.");
     }
 
+    public static void printCourseAlreadyAdded() {
+        System.out.println("This course has already been added.\n" +
+                "If you want to add this course elsewhere, please use \"move\" command.\n" +
+                "    e.g. move DTK1234 y/4 t/1");
+    }
+
     //@@author cirelesna
     public static String getUserCommand() {
         System.out.print("Command: ");
