@@ -1,0 +1,2322 @@
+3月 30, 2024 4:55:14 下午 seedu.planus.PlaNus run
+信息: Loading user timetablemyTimetable0
+3月 30, 2024 4:55:20 下午 seedu.planus.Parser parseCommand
+信息: Processing command: check
+3月 30, 2024 4:55:20 下午 seedu.planus.PlaNus run
+信息: Loading user timetablemyTimetable0
+3月 30, 2024 5:02:51 下午 seedu.planus.Parser parseCommand
+信息: Processing command: view
+3月 30, 2024 5:02:51 下午 seedu.planus.PlanGetter getPlan
+信息: Getting the whole timetable plan
+3月 30, 2024 5:02:51 下午 seedu.planus.PlaNus run
+信息: Loading user timetablemyTimetable0
+3月 30, 2024 5:03:00 下午 seedu.planus.Parser parseCommand
+信息: Processing command: init CEG
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 1 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 1 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 2 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 2 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 3 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 3 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 4 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 4 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.PlaNus run
+信息: Loading user timetablemyTimetable0
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 1 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 1 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 2 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 2 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 3 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 3 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 4 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 4 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:03:00 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Parser parseCommand
+信息: Processing command: view
+3月 30, 2024 5:03:04 下午 seedu.planus.PlanGetter getPlan
+信息: Getting the whole timetable plan
+3月 30, 2024 5:03:04 下午 seedu.planus.PlaNus run
+信息: Loading user timetablemyTimetable0
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 1 Semester 1
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 1 Semester 2
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 2 Semester 1
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 2 Semester 2
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 3 Semester 1
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 3 Semester 2
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 4 Semester 1
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 4 Semester 2
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:03:04 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Parser parseCommand
+信息: Processing command: add grade CS1010 S
+3月 30, 2024 5:03:52 下午 seedu.planus.Parser parseCommand
+信息: Adding grade to course
+3月 30, 2024 5:03:52 下午 seedu.planus.PlaNus run
+信息: Loading user timetablemyTimetable0
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 1 Semester 1
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 1 Semester 2
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 2 Semester 1
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 2 Semester 2
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 3 Semester 1
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 3 Semester 2
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 4 Semester 1
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 4 Semester 2
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:03:52 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Parser parseCommand
+信息: Processing command: add grade Eg1311 U
+3月 30, 2024 5:04:06 下午 seedu.planus.Parser parseCommand
+信息: Adding grade to course
+3月 30, 2024 5:04:06 下午 seedu.planus.PlaNus run
+信息: Loading user timetablemyTimetable0
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 1 Semester 1
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 1 Semester 2
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 2 Semester 1
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 2 Semester 2
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 3 Semester 1
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 3 Semester 2
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 4 Semester 1
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 4 Semester 2
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:04:06 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Parser parseCommand
+信息: Processing command: add grade CG2111A A
+3月 30, 2024 5:04:18 下午 seedu.planus.Parser parseCommand
+信息: Adding grade to course
+3月 30, 2024 5:04:18 下午 seedu.planus.PlaNus run
+信息: Loading user timetablemyTimetable0
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 1 Semester 1
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 1 Semester 2
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 2 Semester 1
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 2 Semester 2
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 3 Semester 1
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 3 Semester 2
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 4 Semester 1
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 4 Semester 2
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:04:18 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Parser parseCommand
+信息: Processing command: add grade CG1111A B
+3月 30, 2024 5:04:27 下午 seedu.planus.Parser parseCommand
+信息: Adding grade to course
+3月 30, 2024 5:04:27 下午 seedu.planus.PlaNus run
+信息: Loading user timetablemyTimetable0
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 1 Semester 1
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 1 Semester 2
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 2 Semester 1
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 2 Semester 2
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 3 Semester 1
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 3 Semester 2
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 4 Semester 1
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 4 Semester 2
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:04:27 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Parser parseCommand
+信息: Processing command: add grade MA1508E A-
+3月 30, 2024 5:04:41 下午 seedu.planus.Parser parseCommand
+信息: Adding grade to course
+3月 30, 2024 5:04:41 下午 seedu.planus.PlaNus run
+信息: Loading user timetablemyTimetable0
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 1 Semester 1
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 1 Semester 2
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 2 Semester 1
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 2 Semester 2
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 3 Semester 1
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 3 Semester 2
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 4 Semester 1
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 4 Semester 2
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:04:41 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Parser parseCommand
+信息: Processing command: checky/1
+3月 30, 2024 5:04:49 下午 seedu.planus.Parser parseCommand
+警告: Invalid command format: checky/1
+3月 30, 2024 5:04:49 下午 seedu.planus.PlaNus run
+信息: Loading user timetablemyTimetable0
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 1 Semester 1
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 1 Semester 2
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 2 Semester 1
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 2 Semester 2
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 3 Semester 1
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 3 Semester 2
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 4 Semester 1
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 4 Semester 2
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:04:49 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Parser parseCommand
+信息: Processing command: check y/1
+3月 30, 2024 5:04:54 下午 seedu.planus.PlaNus run
+信息: Loading user timetablemyTimetable0
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 1 Semester 1
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 1 Semester 2
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 2 Semester 1
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 2 Semester 2
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 3 Semester 1
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 3 Semester 2
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 4 Semester 1
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 4 Semester 2
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:04:54 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Parser parseCommand
+信息: Processing command: rm grade CG2111A
+3月 30, 2024 5:06:17 下午 seedu.planus.Parser parseCommand
+信息: Removing grade from course
+3月 30, 2024 5:06:17 下午 seedu.planus.PlaNus run
+信息: Loading user timetablemyTimetable0
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 1 Semester 1
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 1 Semester 2
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 2 Semester 1
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 2 Semester 2
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 3 Semester 1
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 3 Semester 2
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 4 Semester 1
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 4 Semester 2
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:06:17 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Parser parseCommand
+信息: Processing command: check y/1
+3月 30, 2024 5:06:22 下午 seedu.planus.PlaNus run
+信息: Loading user timetablemyTimetable0
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 1 Semester 1
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 1 Semester 2
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 2 Semester 1
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 2 Semester 2
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 3 Semester 1
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 3 Semester 2
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 4 Semester 1
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 4 Semester 2
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:06:22 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Parser parseCommand
+信息: Processing command: check
+3月 30, 2024 5:06:35 下午 seedu.planus.PlaNus run
+信息: Loading user timetablemyTimetable0
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 1 Semester 1
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 1 Semester 2
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 2 Semester 1
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 2 Semester 2
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 3 Semester 1
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 3 Semester 2
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 4 Semester 1
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 4 Semester 2
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:06:35 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Parser parseCommand
+信息: Processing command: bye
+3月 30, 2024 5:06:48 下午 seedu.planus.Parser parseCommand
+信息: Exiting PlaNus
+3月 30, 2024 5:06:48 下午 seedu.planus.PlaNus run
+信息: Loading user timetablemyTimetable0
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 1 Semester 1
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 1
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 1 Semester 2
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 1 Semester 2
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 2 Semester 1
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 1
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 2 Semester 2
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 2 Semester 2
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 3 Semester 1
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 1
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 3 Semester 2
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 3 Semester 2
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 4 Semester 1
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 1
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Adding new row for Year 4 Semester 2
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Found row for Year 4 Semester 2
+3月 30, 2024 5:06:48 下午 seedu.planus.Timetable addCourse
+信息: Added new course

@@ -16,11 +16,8 @@ public class GradeChecker {
      */
     public static String checkGrade(Timetable timetable) {
         assert timetable != null : "Timetable provided cannot be null.";
-        int totalMCs = 0;
         int totalMCsWithoutSU = 0;
-        int yearMCs = 0;
         int yearMCsWithoutSU = 0;
-        int termMCs = 0;
         int termMCsWithoutSU = 0;
         double totalGrade = 0.00;
         double yearGrade = 0.00;
@@ -41,13 +38,14 @@ public class GradeChecker {
                         .append(System.lineSeparator());
 
                 for (Course course : timetable.courses.get(index)) {
-                    assert course.getModularCredit() >= 0 : "Modular credits for a course should be non-negative.";
                     plan.append("  ").append(course.getGrade()).append(System.lineSeparator());
                     if (course.getLetterGrade() == null) {
                         continue;
                     }
-                    termMCs += course.getModularCredit();
-                    if (!course.getLetterGrade().equals("S") && !course.getLetterGrade().equals("CS")) {
+
+                    if (!course.getLetterGrade().equals("S") && !course.getLetterGrade().equals("CS")
+                            && !course.getLetterGrade().equals("U") && !course.getLetterGrade().equals("CU")
+                            && !(course.getLetterGrade() == null)) {
                         termMCsWithoutSU += course.getModularCredit();
                         termGrade += course.getNumberGrade() * course.getModularCredit();
                     }
@@ -61,10 +59,8 @@ public class GradeChecker {
                 plan.append("Term GPA: ").append(termGPA).append(System.lineSeparator())
                         .append("-----------------------------").append(System.lineSeparator());
 
-                yearMCs += termMCs;
                 yearMCsWithoutSU += termMCsWithoutSU;
                 yearGrade += termGrade;
-                termMCs = 0;
                 termMCsWithoutSU = 0;
                 termGrade = 0.00;
             }
@@ -77,10 +73,8 @@ public class GradeChecker {
             plan.append("Year ").append(y).append(" GPA: ").append(yearGPA).append(System.lineSeparator())
                     .append(System.lineSeparator());
 
-            totalMCs += yearMCs;
             totalMCsWithoutSU += yearMCsWithoutSU;
             totalGrade += yearGrade;
-            yearMCs = 0;
             yearMCsWithoutSU = 0;
             yearGrade = 0.00;
         }
@@ -104,9 +98,7 @@ public class GradeChecker {
      */
     public static String checkGrade(Timetable timetable, int year) {
         assert year >= 1 && year <= MAX_CANDIDATURE_YEAR : "Year parameter is out of valid range.";
-        int yearMCs = 0;
         int yearMCsWithoutSU = 0;
-        int termMCs = 0;
         int termMCsWithoutSU = 0;
         double yearGrade = 0.00;
         double termGrade = 0.00;
@@ -125,14 +117,14 @@ public class GradeChecker {
                     .append(System.lineSeparator());
 
             for (Course course : timetable.courses.get(index)) {
-                assert course.getModularCredit() >= 0 : "Modular credits for a course should be non-negative.";
                 plan.append("  ").append(course.getGrade()).append(System.lineSeparator());
                 if (course.getLetterGrade() == null) {
                     continue;
                 }
 
-                termMCs += course.getModularCredit();
-                if (!course.getLetterGrade().equals("S") && !course.getLetterGrade().equals("CS")) {
+                if (!course.getLetterGrade().equals("S") && !course.getLetterGrade().equals("CS")
+                        && !course.getLetterGrade().equals("U") && !course.getLetterGrade().equals("CU")
+                        && !(course.getLetterGrade() == null)) {
                     termMCsWithoutSU += course.getModularCredit();
                     termGrade += course.getNumberGrade() * course.getModularCredit();
                 }
@@ -146,10 +138,8 @@ public class GradeChecker {
             plan.append("Term GPA: ").append(termGPA).append(System.lineSeparator())
                     .append("-----------------------------").append(System.lineSeparator());
 
-            yearMCs += termMCs;
             yearMCsWithoutSU += termMCsWithoutSU;
             yearGrade += termGrade;
-            termMCs = 0;
             termMCsWithoutSU = 0;
             termGrade = 0.00;
         }
@@ -177,7 +167,6 @@ public class GradeChecker {
     public static String checkGrade(Timetable timetable, int year, int term) {
         assert year >= 1 && year <= MAX_CANDIDATURE_YEAR : "Year parameter is out of valid range.";
         assert term >= 1 && term <= TERM_PER_YEAR : "Term parameter is out of valid range.";
-        int termMCs = 0;
         int termMCsWithoutSU = 0;
         double termGrade = 0.00;
         int index = timetable.searchTimetableIndex(year, term);
@@ -187,13 +176,13 @@ public class GradeChecker {
         plan.append(timetable.courses.get(index).get(0).getYearAndTerm()).append(":").append(System.lineSeparator());
 
         for (Course course : timetable.courses.get(index)) {
-            assert course.getModularCredit() >= 0 : "Modular credits for a course should be non-negative.";
             plan.append("  ").append(course.getGrade()).append(System.lineSeparator());
             if (course.getLetterGrade() == null) {
                 continue;
             }
-            termMCs += course.getModularCredit();
-            if (!course.getLetterGrade().equals("S") && !course.getLetterGrade().equals("CS")) {
+            if (!course.getLetterGrade().equals("S") && !course.getLetterGrade().equals("CS")
+                    && !course.getLetterGrade().equals("U") && !course.getLetterGrade().equals("CU")
+                    && !(course.getLetterGrade() == null)) {
                 termMCsWithoutSU += course.getModularCredit();
                 termGrade += course.getNumberGrade() * course.getModularCredit();
             }
