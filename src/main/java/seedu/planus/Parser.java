@@ -73,7 +73,7 @@ public class Parser {
                     throw new Exception(Ui.INVALID_ADD_COURSE);
                 }
 
-                String courseNameAndMC = Storage.searchCourse(courseCode, mc);
+                String courseNameAndMC = Storage.searchCourse(courseCode.toUpperCase(), mc);
                 String courseName = courseNameAndMC.substring(0, courseNameAndMC.indexOf(","));
                 mc = Integer.parseInt(courseNameAndMC.substring(courseNameAndMC.indexOf(",") + 1).trim());
                 newCourse = new Course(courseCode, courseName, mc, year, term);
@@ -88,7 +88,7 @@ public class Parser {
             } else if (targetAdded.equalsIgnoreCase("grade")) {
                 try {
                     logger.log(Level.INFO, "Adding grade to course");
-                    String courseCode = words[2];
+                    String courseCode = words[2].toUpperCase();
                     String grade = words[3].toUpperCase(); // Convert grade to uppercase
                     timetable.addGrade(courseCode, grade);
                     Storage.writeToFile(timetable);
@@ -110,7 +110,7 @@ public class Parser {
             if (targetRemoved.equalsIgnoreCase("course")) {
                 try {
                     logger.log(Level.INFO, "Removing course from timetable");
-                    timetable.removeCourse(words[2]);
+                    timetable.removeCourse(words[2].toUpperCase());
                     Storage.writeToFile(timetable);
                 } catch (IndexOutOfBoundsException | NullPointerException e) {
                     throw new Exception(Ui.INVALID_REMOVE_COURSE);
@@ -118,7 +118,7 @@ public class Parser {
             } else if (targetRemoved.equalsIgnoreCase("grade")) {
                 try {
                     logger.log(Level.INFO, "Removing grade from course");
-                    timetable.removeGrade(words[2]);
+                    timetable.removeGrade(words[2].toUpperCase());
                     Storage.writeToFile(timetable);
                 } catch (IndexOutOfBoundsException | NullPointerException e) {
                     throw new Exception(Ui.INVALID_REMOVE_GRADE);
@@ -126,6 +126,41 @@ public class Parser {
             } else {
                 throw new Exception(Ui.INVALID_REMOVE);
             }
+            return false;
+        case "move":
+            Course courseToMove = null;
+            String grade = null;
+            boolean exists;
+            try {
+                logger.log(Level.INFO, "Removing course from timetable");
+                grade = timetable.searchGrade(words[1].toUpperCase());
+                exists = timetable.removeCourse(words[1].toUpperCase());
+            } catch (IndexOutOfBoundsException | NullPointerException e) {
+                logger.log(Level.WARNING, "Invalid command format: move course");
+                throw new Exception(Ui.INVALID_MOVE_COURSE);
+            }
+            if (!exists) {
+                Ui.printCourseNotFound();
+                return false;
+            }
+            try {
+                logger.log(Level.INFO, "Re-adding course to timetable");
+                year = Integer.parseInt(words[2].substring("y/".length()).trim());
+                term = Integer.parseInt(words[3].substring("t/".length()).trim());
+                String courseNameAndMC = Storage.searchCourse(words[1].toUpperCase(), mc);
+                String courseName = courseNameAndMC.substring(0, courseNameAndMC.indexOf(","));
+                mc = Integer.parseInt(courseNameAndMC.substring(courseNameAndMC.indexOf(",") + 1).trim());
+                courseToMove = new Course(words[1].toUpperCase(), courseName, mc, year, term);
+                timetable.addCourse(courseToMove);
+                if (grade != null) {
+                    timetable.addGrade(words[1].toUpperCase(), grade);
+                }
+                Storage.writeToFile(timetable);
+            } catch (NumberFormatException | NullPointerException | IndexOutOfBoundsException e) {
+                logger.log(Level.WARNING, "Invalid command format: move course");
+                throw new Exception(Ui.INVALID_MOVE_COURSE);
+            }
+            logger.log(Level.INFO, "Moving course success");
             return false;
         case "change":
             String targetChanged;

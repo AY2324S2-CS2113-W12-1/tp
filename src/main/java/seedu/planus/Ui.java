@@ -22,6 +22,9 @@ public class Ui {
     public static final String INVALID_REMOVE = "To remove course, please enter: rm course [course code]\n" +
             "    e.g. rm course CS1010\nTo remove grade, please enter: rm grade [course code]\n" +
             "    e.g. rm grade CS1010";
+    public static final String INVALID_MOVE_COURSE = "To move course, please enter: " +
+            "move [course code] y/[year] t/[term]\n" +
+            "    e.g. move CS1010 y/1 t/2";
     public static final String INVALID_CHANGE_GRADE = "To change grade, please enter: change grade " +
             "[course code] [letter grade]\n    e.g. change grade CS1010 A";
     public static final String INVALID_CHECK_YEAR_GRADE = "To check grade of a year, please enter: check y/[year]\n" +
@@ -59,6 +62,7 @@ public class Ui {
                 "    add grade [course code] [letter grade]\n        e.g. add grade CS1010 A\n" +
                 "    rm course [course code]\n        e.g. rm course CS1010\n" +
                 "    rm grade [course code]\n        e.g. rm grade CS1010\n" +
+                "    move [course code] y/[year] t/[term]\n        e.g. move CS1010 y/1 t/2\n" +
                 "    change grade [course code] [letter grade]\n        e.g. change grade CS1010 A\n" +
                 "    change timetable [timetable index]\n        e.g. change timetable 1\n" +
                 "    check y/[year]\n        e.g. check y/1\n" +
