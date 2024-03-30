@@ -18,6 +18,7 @@ import java.util.logging.Logger;
  */
 public class Storage {
     public static final String FOLDER_PATH = "./data/";
+    public static final String COURSE_LIST_PATH = "./data/CourseList.csv";
     public static Integer userTimetableIndex = 0;
     private static Logger logger = Logger.getLogger("myLogger");
 
@@ -129,7 +130,18 @@ public class Storage {
         Ui.printFileCreated();
     }
 
-    public static Course parseCourse(String timetableName, String sentence) throws Exception {
+    private static void writeToCourseList(String course) {
+        try {
+            FileWriter fw = new FileWriter(COURSE_LIST_PATH, true);
+            fw.write(course);
+            fw.close();
+        } catch (IOException e) {
+            createFile(COURSE_LIST_PATH);
+            writeToCourseList(course);
+        }
+    }
+
+    private static Course parseCourse(String timetableName, String sentence) throws Exception {
         String[] words = sentence.split(",");
         String courseCode;
         String courseName;
@@ -156,6 +168,42 @@ public class Storage {
             course.setGrade(letterGrade);
         }
         return course;
+    }
+
+    public static String searchCourse(String courseCode, int MCs) {
+        String courseName;
+        File f = new File(COURSE_LIST_PATH);
+
+        Scanner s = null;
+        try {
+            s = new Scanner(f);
+        } catch (FileNotFoundException e) {
+            Ui.printFailedSearchingInDatabase();
+            courseName = requireCourseName();
+            String course = courseCode + "," + courseName + "," + MCs + System.lineSeparator();
+            Storage.writeToCourseList(course);
+            return course.substring(course.indexOf(",")  + 1);
+        }
+
+        while (s.hasNextLine()) {
+            String courseInList = s.nextLine();
+            String[] courseComponentsInList = courseInList.split(",");
+            String courseCodeInList = courseComponentsInList[0];
+            if (courseCode.equals(courseCodeInList)) {
+                return courseInList.substring(courseInList.indexOf(",")  + 1);
+            }
+        }
+
+        courseName = requireCourseName();
+        String course = courseCode + "," + courseName + "," + MCs + System.lineSeparator();
+        Storage.writeToCourseList(course);
+        return course.substring(course.indexOf(",")  + 1);
+    }
+
+    private static String requireCourseName() {
+        Ui.printCourseNotExist();
+        Scanner in = new Scanner(System.in);
+        return in.nextLine();
     }
 
     public static void changeTimetable(int i) {

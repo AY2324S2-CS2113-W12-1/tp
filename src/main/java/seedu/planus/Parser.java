@@ -65,17 +65,19 @@ public class Parser {
                     String[] splitMC = courseCodeAndYearAndTerms[1].split("m/", 2);
                     if(splitMC.length == 2) {
                         mc = Integer.parseInt(splitMC[1].trim()); // Parse MCs
-                        yearAndTerm = splitMC[0].split("t/", 2);
-                    } else {
-                        yearAndTerm = splitMC[0].split("t/", 2);
                     }
+                    yearAndTerm = splitMC[0].split("t/", 2);
                     year = Integer.parseInt(yearAndTerm[0].trim());
                     term = Integer.parseInt(yearAndTerm[1].trim());
                 } catch (NumberFormatException | IndexOutOfBoundsException | NullPointerException e) {
                     throw new Exception(Ui.INVALID_ADD_COURSE);
                 }
-                String courseName = "userAdded";
+
+                String courseNameAndMC = Storage.searchCourse(courseCode, mc);
+                String courseName = courseNameAndMC.substring(0, courseNameAndMC.indexOf(","));
+                mc = Integer.parseInt(courseNameAndMC.substring(courseNameAndMC.indexOf(",") + 1).trim());
                 newCourse = new Course(courseCode, courseName, mc, year, term);
+
                 try {
                     logger.log(Level.INFO, "Adding course to timetable");
                     timetable.addCourse(newCourse);
@@ -147,7 +149,7 @@ public class Parser {
                 try {
                     logger.log(Level.INFO, "Changing timetable");
                     Storage.changeTimetable(Integer.parseInt(words[2].trim()));
-                } catch (IndexOutOfBoundsException | NullPointerException e) {
+                } catch (IndexOutOfBoundsException | NullPointerException  | NumberFormatException e) {
                     throw new Exception(Ui.INVALID_CHANGE_TIMETABLE);
                 }
             }
@@ -228,4 +230,5 @@ public class Parser {
             throw new Exception(Ui.INVALID_COMMAND);
         }
     }
+
 }
