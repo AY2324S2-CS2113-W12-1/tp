@@ -109,6 +109,29 @@ public class Timetable {
     }
 
     /**
+     * Removes a course from the timetable plan and returns the course to be removed
+     *
+     * @param courseCode The code of the course to be removed
+     * @return The course to be removed
+     */
+    public String searchGrade(String courseCode) {
+        String grade = null;
+
+        for (ArrayList<Course> termCourses : courses) {
+            for (Course course : termCourses) {
+                String currCourseCode = course.getCourseCode();
+                if (currCourseCode.equalsIgnoreCase(courseCode)) {
+                    grade = course.getLetterGrade();
+                    logger.log(Level.INFO, "Course found");
+                    return grade;
+                }
+            }
+        }
+
+        return grade;
+    }
+
+    /**
      * Adds a grade to the existing course
      *
      * @param courseCode Course that the grade is counted for
