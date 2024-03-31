@@ -136,9 +136,10 @@ public class Timetable {
      *
      * @param courseCode Course that the grade is counted for
      * @param grade Grade to be added to the course
+     * @return Whether grade has been successfully added
      */
     //@@author ZhangWenyue3325
-    public void addGrade(String courseCode, String grade) {
+    public boolean addGrade(String courseCode, String grade) {
         for (ArrayList<Course> courseList : courses) {
             for (Course course : courseList) {
                 String currCourseCode = course.getCourseCode();
@@ -147,36 +148,36 @@ public class Timetable {
                     if (course.getLetterGrade() == null) {
                         assert course.getNumberGrade() == -1 : "The numerical grade should be -1.";
                         Ui.printInvalidInputGrade();
-                        return;
+                        return false;
                     }
                     assert course.getLetterGrade().equals(grade) : "The grade is not correctly set.";
-                    Ui.printSuccessToAddGrade(currCourseCode);
-                    return;
+                    return true;
                 }
             }
         }
 
         Ui.printFailedToAddGrade();
+        return false;
     }
 
     /**
-     * Deletes a grade from the existing course
+     * Deletes a grade from the existing course.
      *
      * @param courseCode Course that the grade is counted for
+     * @return Whether the grade has been successfully removed
      */
-    public void removeGrade(String courseCode) {
+    public boolean removeGrade(String courseCode) {
         for (ArrayList<Course> courseList : courses) {
             for (Course course : courseList) {
                 String currCourseCode = course.getCourseCode();
                 if (currCourseCode.equalsIgnoreCase(courseCode)) {
                     course.setGrade(null);
                     assert course.getNumberGrade() == -1 : "The numerical grade should be -1.";
-                    Ui.printSuccessToRemoveGrade(currCourseCode);
-                    return;
+                    return true;
                 }
             }
         }
-        Ui.printFailedToRemoveGrade();
+        return false;
     }
 
     /**

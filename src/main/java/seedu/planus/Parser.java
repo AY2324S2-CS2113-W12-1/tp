@@ -60,7 +60,7 @@ public class Parser {
                 }
                 String courseCode;
                 try {
-                    courseCode = courseCodeAndYearAndTerms[0].trim();
+                    courseCode = courseCodeAndYearAndTerms[0].trim().toUpperCase();
                     // check if mcs are specified first, if not then default 4 mcs
                     String[] splitMC = courseCodeAndYearAndTerms[1].split("m/", 2);
                     if(splitMC.length == 2) {
@@ -81,19 +81,24 @@ public class Parser {
                 try {
                     logger.log(Level.INFO, "Adding course to timetable");
                     timetable.addCourse(newCourse);
+                    Ui.printCourseAdded(courseCode);
                     Storage.writeToFile(timetable);
                 } catch (Exception e) {
                     throw new Exception(e.getMessage());
                 }
             } else if (targetAdded.equalsIgnoreCase("grade")) {
+                boolean isAdded;
                 try {
                     logger.log(Level.INFO, "Adding grade to course");
                     String courseCode = words[2].toUpperCase();
                     String grade = words[3].toUpperCase(); // Convert grade to uppercase
-                    timetable.addGrade(courseCode, grade);
+                    isAdded = timetable.addGrade(courseCode, grade);
                     Storage.writeToFile(timetable);
                 } catch (IndexOutOfBoundsException | NullPointerException e) {
                     throw new Exception(Ui.INVALID_ADD_GRADE);
+                }
+                if (isAdded) {
+                    Ui.printSuccessToAddGrade(words[2].toUpperCase());
                 }
             } else {
                 throw new Exception(Ui.INVALID_ADD);
@@ -107,21 +112,34 @@ public class Parser {
                 logger.log(Level.WARNING, "Invalid command format: {0}", line);
                 throw new Exception(Ui.INVALID_COMMAND);
             }
+            boolean isSuccess;
             if (targetRemoved.equalsIgnoreCase("course")) {
                 try {
                     logger.log(Level.INFO, "Removing course from timetable");
-                    timetable.removeCourse(words[2].toUpperCase());
+                    String courseCode = words[2].toUpperCase();
+                    isSuccess = timetable.removeCourse(courseCode);
                     Storage.writeToFile(timetable);
                 } catch (IndexOutOfBoundsException | NullPointerException e) {
                     throw new Exception(Ui.INVALID_REMOVE_COURSE);
                 }
+                if (isSuccess) {
+                    Ui.printCourseRemoved(words[2].toUpperCase());
+                } else {
+                    Ui.printCourseNotFound();
+                }
             } else if (targetRemoved.equalsIgnoreCase("grade")) {
                 try {
                     logger.log(Level.INFO, "Removing grade from course");
-                    timetable.removeGrade(words[2].toUpperCase());
+                    String courseCode = words[2].toUpperCase();
+                    isSuccess = timetable.removeGrade(courseCode);
                     Storage.writeToFile(timetable);
                 } catch (IndexOutOfBoundsException | NullPointerException e) {
                     throw new Exception(Ui.INVALID_REMOVE_GRADE);
+                }
+                if (isSuccess) {
+                    Ui.printSuccessToRemoveGrade(words[2].toUpperCase());
+                } else {
+                    Ui.printFailedToRemoveGrade();
                 }
             } else {
                 throw new Exception(Ui.INVALID_REMOVE);
@@ -161,6 +179,7 @@ public class Parser {
                 throw new Exception(Ui.INVALID_MOVE_COURSE);
             }
             logger.log(Level.INFO, "Moving course success");
+            Ui.printCourseMoved(words[1].toUpperCase());
             return false;
         case "change":
             String targetChanged;
@@ -171,19 +190,24 @@ public class Parser {
                 throw new Exception(Ui.INVALID_COMMAND);
             }
             if (targetChanged.equalsIgnoreCase("grade")) {
+                boolean isChanged;
                 try {
                     logger.log(Level.INFO, "Changing grade from timetable");
-                    timetable.addGrade(words[2], words[3]);
+                    isChanged = timetable.addGrade(words[2].toUpperCase(), words[3].toUpperCase());
                     Storage.writeToFile(timetable);
                 } catch (IndexOutOfBoundsException | NullPointerException e) {
                     logger.log(Level.WARNING, "Invalid command format: {0}", line);
                     throw new Exception(Ui.INVALID_CHANGE_GRADE);
+                }
+                if (isChanged) {
+                    Ui.printGradeChanged(words[2].toUpperCase(), words[3].toUpperCase());
                 }
             }
             else if (targetChanged.equalsIgnoreCase("timetable")) {
                 try {
                     logger.log(Level.INFO, "Changing timetable");
                     Storage.changeTimetable(Integer.parseInt(words[2].trim()));
+                    Ui.printTimetableChanged();
                 } catch (IndexOutOfBoundsException | NullPointerException  | NumberFormatException e) {
                     throw new Exception(Ui.INVALID_CHANGE_TIMETABLE);
                 }
