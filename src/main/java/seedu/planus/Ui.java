@@ -76,7 +76,7 @@ public class Ui {
 
     //@@author iscyng
     public static void printExit() {
-        System.out.println("Goodbye!");
+        System.out.println("Bye~ Hope to see you again soon!");
     }
 
     public static void printErrorMessage(String message) {
@@ -84,11 +84,11 @@ public class Ui {
     }
 
     public static void printCourseNotFound(){
-        System.out.println("Course does not exist");
+        System.out.println("Oops, the course does not exist! You may want to check your spelling.");
     }
 
-    public static void printCourseAdded() {
-        System.out.println("Course added to your schedule");
+    public static void printCourseAdded(String courseCode) {
+        System.out.println("Sure! " + courseCode + " has been added to your schedule.");
     }
 
     //@@author ZhouJunmin
@@ -118,14 +118,6 @@ public class Ui {
                 "e.g. add grade CS1010 A");
     }
 
-    public static void printWrongTerm() {
-        System.out.println("Term is not from 1 to 4");
-    }
-
-    public static void printWrongYear() {
-        System.out.println("Year is not from 1 to 6");
-    }
-
     //@@author ZhangWenyue3325
     public static void printFailedToAddGrade() {
         System.out.println("The course does not exist in the current timetable! You may want to add the course first.");
@@ -141,6 +133,22 @@ public class Ui {
 
     public static void printSuccessToRemoveGrade(String courseCode) {
         System.out.println("The grade has been removed for " + courseCode);
+    }
+
+    public static void printCourseRemoved(String courseCode) {
+        System.out.println("The course " + courseCode + " has been successfully removed from your timetable.");
+    }
+
+    public static void printCourseMoved(String courseCode) {
+        System.out.println("The course " + courseCode + " has been successfully moved.");
+    }
+
+    public static void printGradeChanged(String courseCode, String newGrade) {
+        System.out.println("The grade of " + courseCode + " has been changed to " + newGrade + " successfully.");
+    }
+
+    public static void printTimetableChanged() {
+        System.out.println("You have successfully switched to another timetable.");
     }
 
     //@@author ZhouJunmin

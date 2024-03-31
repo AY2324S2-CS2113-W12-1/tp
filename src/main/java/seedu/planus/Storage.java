@@ -66,7 +66,7 @@ public class Storage {
 
         if (!Files.exists(filePath)) {
             if (timetableName.contains("myTimetable")) {
-                System.out.println("File at " + filePathName + " is not found. Trying to create one.");
+                Ui.printFileNotFound(filePathName);
                 createFile(filePathName);
             } else {
                 InputStream in = Thread.currentThread().getContextClassLoader()
@@ -98,7 +98,7 @@ public class Storage {
                 Course course = parseCourse(timetableName, line);
                 newTimetable.addCourse(course);
             } catch (Exception e) {
-                System.out.println("Data corrupted at line " + lineNumber + "of file at " + filePathName);
+                Ui.printCorruptedData(lineNumber, filePathName);
             }
             lineNumber ++;
         }

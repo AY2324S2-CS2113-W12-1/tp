@@ -10,4 +10,4 @@
 
 File at ./data/myTimetable0.csv is not found. Trying to create one.
 File creation successful.
-Command: Goodbye!
+Command: Bye~ Hope to see you again soon!
