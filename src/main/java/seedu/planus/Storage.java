@@ -22,9 +22,20 @@ public class Storage {
     public static Integer userTimetableIndex = 0;
     private static Logger logger = Logger.getLogger("myLogger");
 
+    /**
+     * Returns a string representing the path of the file that stores the current timetable of the user.
+     *
+     * @return String representing the path of the file that stores the current timetable of the user.
+     */
     public static String getUserTimetableFilePath() {
         return "./data/myTimetable" + userTimetableIndex.toString() + ".csv";
     }
+
+    /**
+     * Returns a string representing the name of the file that stores the current timetable of the user.
+     *
+     * @return String representing the name of the file that stores the current timetable of the user.
+     */
     public static String getUserTimetableFileName() {
         return "myTimetable" + userTimetableIndex.toString();
     }
@@ -170,6 +181,13 @@ public class Storage {
         return course;
     }
 
+    /**
+     * Searches the name and MCs of the course given the course code and user-input MCs.
+     *
+     * @param courseCode String representing the course code of the course.
+     * @param MCs Integer representing the modular credits of the course.
+     * @return String representing the name and MCs of the course searched given the course code and user-input MCs.
+     */
     public static String searchCourse(String courseCode, int MCs) {
         String courseName;
         File f = new File(COURSE_LIST_PATH);
@@ -206,6 +224,11 @@ public class Storage {
         return in.nextLine();
     }
 
+    /**
+     * Changes the user timetable index to the desired one.
+     *
+     * @param i Integer representing the current timetable index.
+     */
     public static void changeTimetable(int i) {
         userTimetableIndex = i;
     }
