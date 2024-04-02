@@ -23,8 +23,8 @@ public class Ui {
             "    e.g. rm course CS1010\nTo remove grade, please enter: rm grade [course code]\n" +
             "    e.g. rm grade CS1010";
     public static final String INVALID_MOVE_COURSE = "To move course, please enter: " +
-            "move [course code] y/[year] t/[term]\n" +
-            "    e.g. move CS1010 y/1 t/2";
+            "move course [course code] y/[year] t/[term]\n" +
+            "    e.g. move course CS1010 y/1 t/2";
     public static final String INVALID_CHANGE_GRADE = "To change grade, please enter: change grade " +
             "[course code] [letter grade]\n    e.g. change grade CS1010 A";
     public static final String INVALID_CHECK_YEAR_GRADE = "To check grade of a year, please enter: check y/[year]\n" +
@@ -170,7 +170,7 @@ public class Ui {
     public static void printCourseAlreadyAdded() {
         System.out.println("This course has already been added.\n" +
                 "If you want to add this course elsewhere, please use \"move\" command.\n" +
-                "    e.g. move DTK1234 y/4 t/1");
+                "    e.g. move course DTK1234 y/4 t/1");
     }
 
     //@@author cirelesna
