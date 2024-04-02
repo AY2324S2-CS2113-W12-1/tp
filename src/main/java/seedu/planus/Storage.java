@@ -190,6 +190,17 @@ public class Storage {
     public static String searchCourse(String courseCode, Integer MCs) {
         String courseName;
         File f = new File(COURSE_LIST_PATH);
+        if (!f.exists()) {
+            InputStream in = Thread.currentThread().getContextClassLoader()
+                    .getResourceAsStream("CourseList.csv");
+            try {
+                Path filePath = Paths.get("./data/CourseList.csv");
+                Files.copy(in, filePath, StandardCopyOption.REPLACE_EXISTING);
+                assert in != null : "The input stream is null.";
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
 
         Scanner s = null;
         try {
