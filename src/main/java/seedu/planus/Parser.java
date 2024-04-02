@@ -202,8 +202,7 @@ public class Parser {
                 if (isChanged) {
                     Ui.printGradeChanged(words[2].toUpperCase(), words[3].toUpperCase());
                 }
-            }
-            else if (targetChanged.equalsIgnoreCase("timetable")) {
+            } else if (targetChanged.equalsIgnoreCase("timetable")) {
                 try {
                     logger.log(Level.INFO, "Changing timetable");
                     Storage.changeTimetable(Integer.parseInt(words[2].trim()));
@@ -211,8 +210,7 @@ public class Parser {
                 } catch (IndexOutOfBoundsException | NullPointerException  | NumberFormatException e) {
                     throw new Exception(Ui.INVALID_CHANGE_TIMETABLE);
                 }
-            }
-            else {
+            } else {
                 throw new Exception(Ui.INVALID_CHANGE);
             }
             return false;
