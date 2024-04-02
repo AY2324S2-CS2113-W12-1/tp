@@ -211,6 +211,32 @@ Term GPA: 4.625
 -----------------------------
 ```
 
+Example of usage: `check y/1`
+
+Outcome:
+```
+Year 1:
+Year 1 Semester 1:
+  CS1010: A
+  EG1311: A-
+  MA1511: A+
+  MA1512: A+
+  LAJ1201: S
+  CG1111A: A
+Term GPA: 4.875
+-----------------------------
+Year 1 Semester 2:
+  CG2111A: A-
+  DTK1234: S
+  MA1508E: A+
+  PF1101: S
+  GEA1000: A+
+  LAJ2201: A-
+Term GPA: 4.75
+-----------------------------
+Year 1 GPA: 4.8125
+```
+
 <br>
 
 ### Exiting the program: `bye`
