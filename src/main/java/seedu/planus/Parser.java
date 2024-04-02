@@ -56,7 +56,9 @@ public class Parser {
                 try {
                     courseCode = words[2].trim().toUpperCase();
                     mc = 4;
-                    int yearIndex = -1, termIndex = -1, mcIndex = -1;
+                    int yearIndex = -1;
+                    int termIndex = -1;
+                    int mcIndex = -1;
                     for (int i = 3; i < words.length; i++) {
                         if (words[i].startsWith("y/")) {
                             yearIndex = i;
@@ -107,7 +109,7 @@ public class Parser {
                 throw new Exception(Ui.INVALID_ADD);
             }
             return false;
-            case "rm":
+        case "rm":
             String targetRemoved;
             try {
                 targetRemoved = words[1];
