@@ -42,69 +42,72 @@ public class Parser {
                 throw new Exception(Ui.MISSING_MAJOR);
             }
             return false;
-        case "add":
-            String targetAdded;
-            try {
-                targetAdded = words[1];
-            } catch (IndexOutOfBoundsException | NullPointerException e) {
-                logger.log(Level.WARNING, "Invalid command format: {0}", line);
-                throw new Exception(Ui.INVALID_COMMAND);
-            }
-            if (targetAdded.equalsIgnoreCase("course")) {
-                Course newCourse;
-                String[] courseCodeAndYearAndTerms;
+            case "add":
+                String targetAdded;
                 try {
-                    courseCodeAndYearAndTerms = words[2].split("y/", 2);
+                    targetAdded = words[1];
                 } catch (IndexOutOfBoundsException | NullPointerException e) {
-                    throw new Exception(Ui.INVALID_ADD_COURSE);
+                    logger.log(Level.WARNING, "Invalid command format: {0}", line);
+                    throw new Exception(Ui.INVALID_COMMAND);
                 }
-                String courseCode;
-                try {
-                    courseCode = courseCodeAndYearAndTerms[0].trim().toUpperCase();
-                    // check if mcs are specified first, if not then default 4 mcs
-                    String[] splitMC = courseCodeAndYearAndTerms[1].split("m/", 2);
-                    if(splitMC.length == 2) {
-                        mc = Integer.parseInt(splitMC[1].trim()); // Parse MCs
+                if (targetAdded.equalsIgnoreCase("course")) {
+                    Course newCourse;
+                    String courseCode;
+                    try {
+                        courseCode = words[2].trim().toUpperCase();
+                        mc = 4;
+                        int yearIndex = -1, termIndex = -1, mcIndex = -1;
+                        for (int i = 3; i < words.length; i++) {
+                            if (words[i].startsWith("y/")) {
+                                yearIndex = i;
+                            } else if (words[i].startsWith("t/")) {
+                                termIndex = i;
+                            } else if (words[i].startsWith("m/")) {
+                                mcIndex = i;
+                            }
+                        }
+                        // parse mc if /m specified
+                        if (mcIndex != -1) {
+                            mc = Integer.parseInt(words[mcIndex].substring("m/".length()).trim());
+                        }
+                        year = Integer.parseInt(words[yearIndex].substring("y/".length()).trim());
+                        term = Integer.parseInt(words[termIndex].substring("t/".length()).trim());
+                    } catch (NumberFormatException | IndexOutOfBoundsException | NullPointerException e) {
+                        throw new Exception(Ui.INVALID_ADD_COURSE);
                     }
-                    yearAndTerm = splitMC[0].split("t/", 2);
-                    year = Integer.parseInt(yearAndTerm[0].trim());
-                    term = Integer.parseInt(yearAndTerm[1].trim());
-                } catch (NumberFormatException | IndexOutOfBoundsException | NullPointerException e) {
-                    throw new Exception(Ui.INVALID_ADD_COURSE);
-                }
 
-                String courseNameAndMC = Storage.searchCourse(courseCode.toUpperCase(), mc);
-                String courseName = courseNameAndMC.substring(0, courseNameAndMC.indexOf(","));
-                mc = Integer.parseInt(courseNameAndMC.substring(courseNameAndMC.indexOf(",") + 1).trim());
-                newCourse = new Course(courseCode, courseName, mc, year, term);
+                    String courseNameAndMC = Storage.searchCourse(courseCode, mc);
+                    String courseName = courseNameAndMC.substring(0, courseNameAndMC.indexOf(","));
+                    mc = Integer.parseInt(courseNameAndMC.substring(courseNameAndMC.indexOf(",") + 1).trim());
+                    newCourse = new Course(courseCode, courseName, mc, year, term);
 
-                try {
-                    logger.log(Level.INFO, "Adding course to timetable");
-                    timetable.addCourse(newCourse);
-                    Ui.printCourseAdded(courseCode);
-                    Storage.writeToFile(timetable);
-                } catch (Exception e) {
-                    throw new Exception(e.getMessage());
+                    try {
+                        logger.log(Level.INFO, "Adding course to timetable");
+                        timetable.addCourse(newCourse);
+                        Ui.printCourseAdded(courseCode);
+                        Storage.writeToFile(timetable);
+                    } catch (Exception e) {
+                        throw new Exception(e.getMessage());
+                    }
+                } else if (targetAdded.equalsIgnoreCase("grade")) {
+                    boolean isAdded;
+                    try {
+                        logger.log(Level.INFO, "Adding grade to course");
+                        String courseCode = words[2].toUpperCase();
+                        String grade = words[3].toUpperCase(); // change grade to uppercase
+                        isAdded = timetable.addGrade(courseCode, grade);
+                        Storage.writeToFile(timetable);
+                    } catch (IndexOutOfBoundsException | NullPointerException e) {
+                        throw new Exception(Ui.INVALID_ADD_GRADE);
+                    }
+                    if (isAdded) {
+                        Ui.printSuccessToAddGrade(words[2].toUpperCase());
+                    }
+                } else {
+                    throw new Exception(Ui.INVALID_ADD);
                 }
-            } else if (targetAdded.equalsIgnoreCase("grade")) {
-                boolean isAdded;
-                try {
-                    logger.log(Level.INFO, "Adding grade to course");
-                    String courseCode = words[2].toUpperCase();
-                    String grade = words[3].toUpperCase(); // Convert grade to uppercase
-                    isAdded = timetable.addGrade(courseCode, grade);
-                    Storage.writeToFile(timetable);
-                } catch (IndexOutOfBoundsException | NullPointerException e) {
-                    throw new Exception(Ui.INVALID_ADD_GRADE);
-                }
-                if (isAdded) {
-                    Ui.printSuccessToAddGrade(words[2].toUpperCase());
-                }
-            } else {
-                throw new Exception(Ui.INVALID_ADD);
-            }
-            return false;
-        case "rm":
+                return false;
+            case "rm":
             String targetRemoved;
             try {
                 targetRemoved = words[1];
@@ -146,13 +149,17 @@ public class Parser {
             }
             return false;
         case "move":
+            if (words.length < 5 || !words[0].equals("move") || !words[1].equalsIgnoreCase("course")) {
+                logger.log(Level.WARNING, "Invalid command format: move course");
+                throw new Exception(Ui.INVALID_MOVE_COURSE);
+            }
             Course courseToMove = null;
             String grade = null;
             boolean exists;
             try {
                 logger.log(Level.INFO, "Removing course from timetable");
-                grade = timetable.searchGrade(words[1].toUpperCase());
-                exists = timetable.removeCourse(words[1].toUpperCase());
+                grade = timetable.searchGrade(words[2].toUpperCase());
+                exists = timetable.removeCourse(words[2].toUpperCase());
             } catch (IndexOutOfBoundsException | NullPointerException e) {
                 logger.log(Level.WARNING, "Invalid command format: move course");
                 throw new Exception(Ui.INVALID_MOVE_COURSE);
@@ -163,15 +170,15 @@ public class Parser {
             }
             try {
                 logger.log(Level.INFO, "Re-adding course to timetable");
-                year = Integer.parseInt(words[2].substring("y/".length()).trim());
-                term = Integer.parseInt(words[3].substring("t/".length()).trim());
-                String courseNameAndMC = Storage.searchCourse(words[1].toUpperCase(), mc);
+                year = Integer.parseInt(words[3].substring("y/".length()).trim());
+                term = Integer.parseInt(words[4].substring("t/".length()).trim());
+                String courseNameAndMC = Storage.searchCourse(words[2].toUpperCase(), mc);
                 String courseName = courseNameAndMC.substring(0, courseNameAndMC.indexOf(","));
                 mc = Integer.parseInt(courseNameAndMC.substring(courseNameAndMC.indexOf(",") + 1).trim());
-                courseToMove = new Course(words[1].toUpperCase(), courseName, mc, year, term);
+                courseToMove = new Course(words[2].toUpperCase(), courseName, mc, year, term);
                 timetable.addCourse(courseToMove);
                 if (grade != null) {
-                    timetable.addGrade(words[1].toUpperCase(), grade);
+                    timetable.addGrade(words[2].toUpperCase(), grade);
                 }
                 Storage.writeToFile(timetable);
             } catch (NumberFormatException | NullPointerException | IndexOutOfBoundsException e) {
@@ -179,7 +186,7 @@ public class Parser {
                 throw new Exception(Ui.INVALID_MOVE_COURSE);
             }
             logger.log(Level.INFO, "Moving course success");
-            Ui.printCourseMoved(words[1].toUpperCase());
+            Ui.printCourseMoved(words[2].toUpperCase());
             return false;
         case "change":
             String targetChanged;

@@ -163,18 +163,20 @@ give the user relevant course information and future course recommendations.
 
 ## User Stories
 
-|Version| As a ...                           | I want to ...                                                      | So that I can ...                                      |
-|--------|------------------------------------|--------------------------------------------------------------------|--------------------------------------------------------|
-|v1.0| new user                           | see usage instructions                                             | refer to them when I forget how to use the application |
-|v1.0| new user                           | initialise my course plan based on my major's recommended schedule | populate the plan easily                               |
-|v1.0| user                               | have my data auto-saved                                            | not worry about saving them                            |
-|v1.0| user planning for future semesters | add new courses to the plan                                        | update the records                                     |
-|v1.0| user planning for future semesters | remove courses from the plan                                       | change my mind                                         |
-|v1.0| user planning for future semesters | view my course plan                                                | recall my plans                                        |
-|v1.0| user recording past grades         | add my grades                                                      | keep track of my latest results                        |
-|v1.0| user recording past grades         | modify my grades                                                   | keep track of my correct results                       |
-|v1.0| user recording past grades         | check my grades along with the GPA calculated                      | see my results easily                                  |
-|v2.0|                                    |                                                                    |                                                        |
+| Version | As a ...                           | I want to ...                                                      | So that I can ...                                      |
+|---------|------------------------------------|--------------------------------------------------------------------|--------------------------------------------------------|
+| v1.0    | new user                           | see usage instructions                                             | refer to them when I forget how to use the application |
+| v1.0    | new user                           | initialise my course plan based on my major's recommended schedule | populate the plan easily                               |
+| v1.0    | user                               | have my data auto-saved                                            | not worry about saving them                            |
+| v1.0    | user planning for future semesters | add new courses to the plan                                        | update the records                                     |
+| v1.0    | user planning for future semesters | remove courses from the plan                                       | change my mind                                         |
+| v1.0    | user planning for future semesters | view my course plan                                                | recall my plans                                        |
+| v1.0    | user recording past grades         | add my grades                                                      | keep track of my latest results                        |
+| v1.0    | user recording past grades         | modify my grades                                                   | keep track of my correct results                       |
+| v1.0    | user recording past grades         | check my grades along with the GPA calculated                      | see my results easily                                  |
+| v2.0    | user recording past grades         | check my grades with GPA calculated after SU declarations          | see my results and GPA easily                          |
+| v2.0    | user planning for future semesters | move courses around semesters                                      | change my mind                                         |
+| v2.0    | user pursuing UEs                  | add the course without knowing the exact course name               | have ease of use                                       |
 
 ## Non-Functional Requirements
 

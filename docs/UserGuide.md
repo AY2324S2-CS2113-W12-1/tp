@@ -72,7 +72,7 @@ Format: `display MAJOR_NAME`
 ### Adding a course to course plan: `add course`
 Adds a new course to the course plan at the term specified.
 
-Format: `add course COURSE_CODEy/YEARt/TERM{m/MCS}`
+Format: `add course COURSE_CODE y/YEAR t/TERM {m/MCS}`
 - YEAR represents the year of study of the user. 
   It must be a positive integer from 1 to 6, which is the maximum candidature period.
 - TERM must span from 1 to 4, with 1 and 2 representing the normal semesters, 
@@ -80,11 +80,24 @@ Format: `add course COURSE_CODEy/YEARt/TERM{m/MCS}`
 - MCS represents the Modular Credits of the course added. This is to cater to certain courses with different credits.
   If the user input does not include m/MCS, it will default to 4 MCS being added. 
 
-Example of usage: `add course CS1010y/1t/1`
+Example of usage: `add course CS1010 y/1 t/1`
 
 OR
 
-Example of usage: `add course CFG1002y/1t/1m/2`
+Example of usage: `add course CFG1002 y/1 t/1 m/2`
+
+<br>
+
+### Moving a course to a different term: `move course`
+Moves an existing course to the specified term.
+
+Format: `move course COURSE_CODE y/YEAR t/TERM`
+- YEAR represents the year of study of the user.
+  It must be a positive integer from 1 to 6, which is the maximum candidature period.
+- TERM must span from 1 to 4, with 1 and 2 representing the normal semesters,
+  while 3 and 4 represent the special terms
+
+Example of usage: `move course MA1512 y/1 t/2`
 
 <br>
 
@@ -217,8 +230,9 @@ Format: `bye`
 - Viewing help: `help`
 - Initializing course plan: `init MAJOR_NAME`
 - Displaying recommended schedules: `display MAJOR_NAME`
-- Adding a course to course plan: `add course COURSE_CODEy/YEARt/TERM{m/MCS}`
+- Adding a course to course plan: `add course COURSE_CODE y/YEAR t/TERM {m/MCS}`
 - Removing course from course plan: `rm course COURSE_CODE`
+- Moving a course to a different term: `move course COURSE_CODE y/YEAR t/TERM` 
 - Viewing course plan: `view {y/YEAR} {t/TERM}`
 - Adding grades: `add grade COURSE_CODE GRADE`
 - Removing grades: `rm grade COURSE_CODE`
