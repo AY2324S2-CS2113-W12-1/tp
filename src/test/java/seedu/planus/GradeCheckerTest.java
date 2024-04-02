@@ -43,21 +43,26 @@ public class GradeCheckerTest {
                 4, 1, 2));
         timetable.addGrade("CG2111A", "A-");
 
-        String expectedOutput = "Year 1:\n"
-                + "Year 1 Semester 1:\n"
-                + "  CS1010: A\n"
-                + "  CG1111A: B\n"
-                + "  MA1511: C\n"
-                + "  MA1512: S\n"
-                + "Term GPA: 3.8\n"
-                + "-----------------------------\n"
-                + "Year 1 Semester 2:\n"
-                + "  DTK1234: A+\n"
-                + "  PF1101: B+\n"
-                + "  CG2111A: A-\n"
-                + "Term GPA: 4.5\n"
-                + "-----------------------------\n"
-                + "Year 1 GPA: 4.181818181818182\n\n";
+        String expectedOutput = String.join(
+                System.lineSeparator(),
+                "Year 1:",
+                "Year 1 Semester 1:",
+                "  CS1010: A",
+                "  CG1111A: B",
+                "  MA1511: C",
+                "  MA1512: S",
+                "Term GPA: 3.8",
+                "-----------------------------",
+                "Year 1 Semester 2:",
+                "  DTK1234: A+",
+                "  PF1101: B+",
+                "  CG2111A: A-",
+                "Term GPA: 4.5",
+                "-----------------------------",
+                "Year 1 GPA: 4.181818181818182",
+                "",
+                ""
+        );
 
         String actualOutput = GradeChecker.checkGrade(timetable, 1);
 

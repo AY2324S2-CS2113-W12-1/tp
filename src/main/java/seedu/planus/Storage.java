@@ -69,8 +69,7 @@ public class Storage {
         String filePathName;
         if (timetableName.contains("myTimetable")) {
             filePathName = getUserTimetableFilePath();
-        }
-        else {
+        } else {
             filePathName = "./data/" + timetableName + ".csv";
         }
         Path filePath = Paths.get(filePathName);
@@ -188,7 +187,7 @@ public class Storage {
      * @param MCs Integer representing the modular credits of the course.
      * @return String representing the name and MCs of the course searched given the course code and user-input MCs.
      */
-    public static String searchCourse(String courseCode, int MCs) {
+    public static String searchCourse(String courseCode, Integer MCs) {
         String courseName;
         File f = new File(COURSE_LIST_PATH);
 
