@@ -9,7 +9,7 @@ EG1311,Design and Make,4,1,2
 MA1511,Engineering Calculus,2,1,2
 CE2407B,Introduction to Numerical Methods for Engineers,2,1,2
 CE2155,Principles of Structural Mechanics and Materials,4,1,2
-UE,Unrestricted Elective,4,1,2
+UE1,Unrestricted Elective,4,1,2
 CDE2501,Liveable Cities,4,2,1
 EE2211,Introduction to Machine Learning,4,2,1
 CE2134,Fuild Mechanics,4,2,1
@@ -25,17 +25,17 @@ CDE2000,Creating Narratives,4,3,1
 CE3121,Urban Transportation Engineering,4,3,1
 CE3165,Concrete Design for Urban Infrastructure,4,3,1
 EG2401A,Engineering Professionalism,2,3,1
-UE,Unrestricted Elective,4,3,1
-UE,Unrestricted Elective,4,3,1
+UE2,Unrestricted Elective,4,3,1
+UE3,Unrestricted Elective,4,3,1
 CE3116,Foundation Systems for Urban Infrastructure,4,3,2
 CE3132,Hydrology and Free Surface Flows,4,3,2
 CE3166,Steel Design for Urban Infrastructure,4,3,2
-UE,Unrestricted Elective,4,3,2
-UE,Unrestricted Electve,4,3,2
+UE4,Unrestricted Elective,4,3,2
+UE5,Unrestricted Electve,4,3,2
 CE4103R,Design Project,8,4,1
-UE,Unrestricted Elective,4,4,1
-UE,Unrestricted Elective,4,4,1
-UE,Unrestricted Elective,4,4,1
+UE6,Unrestricted Elective,4,4,1
+UE7,Unrestricted Elective,4,4,1
+UE8,Unrestricted Elective,4,4,1
 EG3611A,Industrial Attachment,10,4,2
-UE,Unrestricted Elective,4,4,2
-UE,Unrestricted Elective,4,4,2
+UE9,Unrestricted Elective,4,4,2
+UE10,Unrestricted Elective,4,4,2
