@@ -110,19 +110,6 @@ Example of usage: `rm course CS1010`
 
 <br>
 
-### Moving an existing course to the desired term: `move`
-Moves an existing course in the course plan to the term specified.
-
-Format: `move COURSE_CODE y/YEAR t/TERM`
-- YEAR represents the year of study of the user.
-  It must be a positive integer from 1 to 6, which is the maximum candidature period.
-- TERM must span from 1 to 4, with 1 and 2 representing the normal semesters,
-  while 3 and 4 represent the special terms.
-
-Example of usage: `move CS1010 y/1 t/1`
-
-<br>
-
 ### Viewing course plan: `view`
 Shows the course plan, together with the number of modular credits.
 If term is not specified, courses for the whole year will be shown.
@@ -193,7 +180,7 @@ Example of usage: `change grade CS1010 A+`
 Changes the timetable to the corresponding index.
 
 Format: `change timetable TIMETABLE_INDEX`
-- TIMETABLE_INDEX is the index of the saved timetable
+- TIMETABLE_INDEX is the index of the saved timetable, starting from 0
 
 Example of usage: `change timetable 2`
 
