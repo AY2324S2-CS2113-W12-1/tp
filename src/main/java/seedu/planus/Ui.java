@@ -9,11 +9,12 @@ public class Ui {
     public static final String INVALID_COMMAND = "Command entered is invalid.\nPlease enter: \"help\" " +
             "for available commands.";
     public static final String INVALID_ADD_COURSE = "To add course, please enter: add course " +
-            "[course code]y/[year]t/[term]\n    e.g. add course CS1010y/1t/1";
+            "[course code] y/[year] t/[term] m/[modular credit]\n    e.g. add course CS1010 y/1 t/1";
     public static final String INVALID_ADD_GRADE = "To add grade, please enter: add grade [course code] " +
             "[letter grade]\n    e.g. add grade CS1010 A";
-    public static final String INVALID_ADD = "To add course, please enter: add course [course code]y/[year]t/[term]\n"
-            + "    e.g. add course CS1010y/1t/1\nTo add grade, please enter: add grade [course code] [letter grade]\n"
+    public static final String INVALID_ADD = "To add course, please enter: add course [course code] " +
+            "y/[year] t/[term] m/[modular credit]\n"
+            + "    e.g. add course CS1010 y/1 t/1\nTo add grade, please enter: add grade [course code] [letter grade]\n"
             + "    e.g. add grade CS1010 A";
     public static final String INVALID_REMOVE_COURSE = "To remove course, please enter: rm course [course code]\n" +
             "    e.g. rm course CS1010";
@@ -57,12 +58,12 @@ public class Ui {
     public static void printHelp() {
         System.out.println("Listed below are all available commands:\n" +
                 "    init [major]\n        e.g. init CEG\n" +
-                "    add course [course code]y/[year]t/[term]m/[modular credit]\n" +
-                "        e.g. add course CS1010y/1t/1m/4\n" +
+                "    add course [course code] y/[year] t/[term] m/[modular credit]\n" +
+                "        e.g. add course CS1010 y/1 t/1 m/4\n" +
                 "    add grade [course code] [letter grade]\n        e.g. add grade CS1010 A\n" +
                 "    rm course [course code]\n        e.g. rm course CS1010\n" +
                 "    rm grade [course code]\n        e.g. rm grade CS1010\n" +
-                "    move [course code] y/[year] t/[term]\n        e.g. move CS1010 y/1 t/2\n" +
+                "    move course [course code] y/[year] t/[term]\n        e.g. move course CS1010 y/1 t/2\n" +
                 "    change grade [course code] [letter grade]\n        e.g. change grade CS1010 A\n" +
                 "    change timetable [timetable index]\n        e.g. change timetable 1\n" +
                 "    check y/[year]\n        e.g. check y/1\n" +

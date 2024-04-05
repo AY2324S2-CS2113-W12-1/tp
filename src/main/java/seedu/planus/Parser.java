@@ -85,8 +85,11 @@ public class Parser {
 
                 try {
                     logger.log(Level.INFO, "Adding course to timetable");
-                    timetable.addCourse(newCourse);
-                    Ui.printCourseAdded(courseCode);
+                    if (timetable.addCourse(newCourse)) {
+                        Ui.printCourseAlreadyAdded();
+                    } else {
+                        Ui.printCourseAdded(courseCode);
+                    }
                     Storage.writeToFile(timetable);
                 } catch (Exception e) {
                     throw new Exception(e.getMessage());

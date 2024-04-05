@@ -23,9 +23,10 @@ public class Timetable {
      * Adds a course to the timetable plan
      *
      * @param course New course to be added
+     * @return Returns whether the course already exists in the timetable
      * @throws Exception When the year or term specified is not within acceptable range
      */
-    public void addCourse(Course course) throws Exception {
+    public boolean addCourse(Course course) throws Exception {
         if (course.getTerm() < 1 || course.getTerm() > TERM_PER_YEAR) {
             logger.log(Level.WARNING, course.toString() + ": Term provided is not from 1 to 4");
             throw new Exception("Term provided is not from 1 to 4");
@@ -41,8 +42,7 @@ public class Timetable {
                 String existingCourseCode = existingCourse.getCourseCode();
                 String courseCode = course.getCourseCode();
                 if (existingCourseCode.equals(courseCode)) {
-                    Ui.printCourseAlreadyAdded();
-                    return;
+                    return true;
                 }
             }
         }
@@ -73,6 +73,7 @@ public class Timetable {
         }
         courses.get(i).add(course);
         logger.log(Level.INFO, "Added new course");
+        return false;
     }
 
     /**
