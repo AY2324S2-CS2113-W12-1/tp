@@ -33,9 +33,9 @@ public class Ui {
     public static final String INVALID_CHECK_TERM_GRADE = "To check grade of a term, please enter: " +
             "check y/[year] t/[term]\n    e.g. check y/1 t/1";
     public static final String INVALID_VIEW_YEAR_PLAN = "To view course plan of a year, please enter: " +
-            "view y/[year]\n    e.g. view y/1";
+            "view y/[year]\n    valid from y/1-y/6, e.g. view y/1";
     public static final String INVALID_VIEW_TERM_PLAN = "To view course plan of a term, please enter: " +
-            "view y/[year] t/[term]\n    e.g. view y/1 t/1";
+            "view y/[year] t/[term]\n   valid from y/1-y/6, t/1-t/4  e.g. view y/1 t/1";
     public static final String INVALID_CHANGE_TIMETABLE = "To change to another timetable please enter: " +
             "change timetable [timetable index]\n e.g. change timetable 2";
     public static final String INVALID_CHANGE = "To change grade, please enter: change grade " +

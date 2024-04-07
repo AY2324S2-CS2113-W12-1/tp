@@ -266,6 +266,9 @@ public class Parser {
             } else if (words.length == 2) {
                 try {
                     year = Integer.parseInt(words[1].substring("y/".length()));
+                    if (year < 1 || year > 6) {
+                        throw new Exception(Ui.INVALID_VIEW_YEAR_PLAN);
+                    }
                 } catch (NumberFormatException | NullPointerException e) {
                     throw new Exception(Ui.INVALID_VIEW_YEAR_PLAN);
                 }
@@ -274,6 +277,13 @@ public class Parser {
                 try {
                     year = Integer.parseInt(words[1].substring("y/".length()));
                     term = Integer.parseInt(words[2].substring("t/".length()));
+
+                    if (year < 1 || year > 6) {
+                        throw new Exception(Ui.INVALID_VIEW_YEAR_PLAN);
+                    }
+                    if (term < 1 || term > 4) {
+                        throw new Exception(Ui.INVALID_VIEW_TERM_PLAN);
+                    }
                 } catch (NumberFormatException | NullPointerException e) {
                     throw new Exception(Ui.INVALID_VIEW_TERM_PLAN);
                 }
