@@ -202,24 +202,31 @@ public class Parser {
                 throw new Exception(Ui.INVALID_COMMAND);
             }
             if (targetChanged.equalsIgnoreCase("grade")) {
-                boolean isChanged;
-                try {
-                    logger.log(Level.INFO, "Changing grade from timetable");
-                    isChanged = timetable.addGrade(words[2].toUpperCase(), words[3].toUpperCase());
-                    Storage.writeToFile(timetable);
-                } catch (IndexOutOfBoundsException | NullPointerException e) {
-                    logger.log(Level.WARNING, "Invalid command format: {0}", line);
-                    throw new Exception(Ui.INVALID_CHANGE_GRADE);
-                }
-                if (isChanged) {
-                    Ui.printGradeChanged(words[2].toUpperCase(), words[3].toUpperCase());
+                boolean isChanged = false;
+                String courseCode = words[2].toUpperCase();
+                String newGrade = words[3].toUpperCase();
+                Grade tempGrade = new Grade(newGrade);
+                if (tempGrade.getLetterGrade() != null) {
+                    try {
+                        logger.log(Level.INFO, "Changing grade in timetable");
+                        isChanged = timetable.addGrade(courseCode, newGrade);
+                        if (isChanged) {
+                            Storage.writeToFile(timetable);
+                            Ui.printGradeChanged(courseCode, newGrade);
+                        }
+                    } catch (IndexOutOfBoundsException | NullPointerException e) {
+                        logger.log(Level.WARNING, "Invalid command format: {0}", line);
+                        throw new Exception(Ui.INVALID_CHANGE_GRADE);
+                    }
+                } else {
+                    Ui.printInvalidInputGrade();
                 }
             } else if (targetChanged.equalsIgnoreCase("timetable")) {
                 try {
                     logger.log(Level.INFO, "Changing timetable");
                     Storage.changeTimetable(Integer.parseInt(words[2].trim()));
                     Ui.printTimetableChanged();
-                } catch (IndexOutOfBoundsException | NullPointerException  | NumberFormatException e) {
+                } catch (IndexOutOfBoundsException | NullPointerException | NumberFormatException e) {
                     throw new Exception(Ui.INVALID_CHANGE_TIMETABLE);
                 }
             } else {
