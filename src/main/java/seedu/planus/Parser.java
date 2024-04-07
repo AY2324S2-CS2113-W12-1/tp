@@ -53,12 +53,12 @@ public class Parser {
             if (targetAdded.equalsIgnoreCase("course")) {
                 Course newCourse;
                 String courseCode;
+                int yearIndex = -1;
+                int termIndex = -1;
+                int mcIndex = -1;
                 try {
                     courseCode = words[2].trim().toUpperCase();
                     mc = 4;
-                    int yearIndex = -1;
-                    int termIndex = -1;
-                    int mcIndex = -1;
                     for (int i = 3; i < words.length; i++) {
                         if (words[i].startsWith("y/")) {
                             yearIndex = i;
@@ -72,6 +72,10 @@ public class Parser {
                     if (mcIndex != -1) {
                         mc = Integer.parseInt(words[mcIndex].substring("m/".length()).trim());
                     }
+                    if (mc < 0 || mc > 30) {
+                        logger.log(Level.WARNING, "Modular Credit provided is not from 0 to 30");
+                        throw new Exception("Modular Credit provided is not from 0 to 30");
+                    }
                     year = Integer.parseInt(words[yearIndex].substring("y/".length()).trim());
                     term = Integer.parseInt(words[termIndex].substring("t/".length()).trim());
                 } catch (NumberFormatException | IndexOutOfBoundsException | NullPointerException e) {
@@ -80,8 +84,14 @@ public class Parser {
 
                 String courseNameAndMC = Storage.searchCourse(courseCode, mc);
                 String courseName = courseNameAndMC.substring(0, courseNameAndMC.indexOf(","));
-                mc = Integer.parseInt(courseNameAndMC.substring(courseNameAndMC.indexOf(",") + 1).trim());
-                newCourse = new Course(courseCode, courseName, mc, year, term);
+                if (mcIndex == -1) {
+                    mc = Integer.parseInt(courseNameAndMC.substring(courseNameAndMC.indexOf(",") + 1).trim());
+                }
+                try {
+                    newCourse = new Course(courseCode, courseName, mc, year, term);
+                } catch (Exception e) {
+                    throw new Exception(e.getMessage());
+                }
 
                 try {
                     logger.log(Level.INFO, "Adding course to timetable");
@@ -202,31 +212,24 @@ public class Parser {
                 throw new Exception(Ui.INVALID_COMMAND);
             }
             if (targetChanged.equalsIgnoreCase("grade")) {
-                boolean isChanged = false;
-                String courseCode = words[2].toUpperCase();
-                String newGrade = words[3].toUpperCase();
-                Grade tempGrade = new Grade(newGrade);
-                if (tempGrade.getLetterGrade() != null) {
-                    try {
-                        logger.log(Level.INFO, "Changing grade in timetable");
-                        isChanged = timetable.addGrade(courseCode, newGrade);
-                        if (isChanged) {
-                            Storage.writeToFile(timetable);
-                            Ui.printGradeChanged(courseCode, newGrade);
-                        }
-                    } catch (IndexOutOfBoundsException | NullPointerException e) {
-                        logger.log(Level.WARNING, "Invalid command format: {0}", line);
-                        throw new Exception(Ui.INVALID_CHANGE_GRADE);
-                    }
-                } else {
-                    Ui.printInvalidInputGrade();
+                boolean isChanged;
+                try {
+                    logger.log(Level.INFO, "Changing grade from timetable");
+                    isChanged = timetable.addGrade(words[2].toUpperCase(), words[3].toUpperCase());
+                    Storage.writeToFile(timetable);
+                } catch (IndexOutOfBoundsException | NullPointerException e) {
+                    logger.log(Level.WARNING, "Invalid command format: {0}", line);
+                    throw new Exception(Ui.INVALID_CHANGE_GRADE);
+                }
+                if (isChanged) {
+                    Ui.printGradeChanged(words[2].toUpperCase(), words[3].toUpperCase());
                 }
             } else if (targetChanged.equalsIgnoreCase("timetable")) {
                 try {
                     logger.log(Level.INFO, "Changing timetable");
                     Storage.changeTimetable(Integer.parseInt(words[2].trim()));
                     Ui.printTimetableChanged();
-                } catch (IndexOutOfBoundsException | NullPointerException | NumberFormatException e) {
+                } catch (IndexOutOfBoundsException | NullPointerException  | NumberFormatException e) {
                     throw new Exception(Ui.INVALID_CHANGE_TIMETABLE);
                 }
             } else {
@@ -236,74 +239,67 @@ public class Parser {
         case "check":
             if (words.length == 1) {
                 System.out.println(GradeChecker.checkGrade(timetable));
-            } else if (words.length >= 2) {
-                if (!words[1].startsWith("y/")) {
-                    logger.log(Level.WARNING, "Invalid command format: {0}", line);
-                    throw new Exception(Ui.INVALID_CHECK_TERM_GRADE);
-                }
+            } else if (words.length == 2) {
                 try {
                     year = Integer.parseInt(words[1].substring("y/".length()));
                     if (year < 1 || year > 6) {
                         logger.log(Level.WARNING, "Year provided is not from 1 to 6");
                         throw new Exception("Year provided is not from 1 to 6");
                     }
-                    if (words.length == 2) {
-                        System.out.println(GradeChecker.checkGrade(timetable, year));
-                    } else if (words.length == 3) {
-                        if (!words[2].startsWith("t/")) {
-                            logger.log(Level.WARNING, "Invalid command format: {0}", line);
-                            throw new Exception(Ui.INVALID_CHECK_TERM_GRADE);
-                        }
-                        term = Integer.parseInt(words[2].substring("t/".length()));
-                        if (term < 1 || term > 4) {
-                            logger.log(Level.WARNING,"Term provided is not from 1 to 4");
-                            throw new Exception("Term provided is not from 1 to 4");
-                        }
-                        System.out.println(GradeChecker.checkGrade(timetable, year, term));
-                    } else {
-                        logger.log(Level.WARNING, "Invalid command format: {0}", line);
-                        throw new Exception(Ui.INVALID_CHECK_TERM_GRADE);
+                } catch (NumberFormatException | NullPointerException e) {
+                    logger.log(Level.WARNING, "Invalid command format: {0}", line);
+                    throw new Exception(Ui.INVALID_CHECK_YEAR_GRADE);
+                }
+                System.out.println(GradeChecker.checkGrade(timetable, year));
+            } else {
+                try {
+                    year = Integer.parseInt(words[1].substring("y/".length()));
+                    term = Integer.parseInt(words[2].substring("t/".length()));
+                    if (term < 1 || term > 4) {
+                        logger.log(Level.WARNING,"Term provided is not from 1 to 4");
+                        throw new Exception("Term provided is not from 1 to 4");
+                    }
+                    if (year < 1 || year > 6) {
+                        logger.log(Level.WARNING, "Year provided is not from 1 to 6");
+                        throw new Exception("Year provided is not from 1 to 6");
                     }
                 } catch (NumberFormatException | NullPointerException e) {
                     logger.log(Level.WARNING, "Invalid command format: {0}", line);
                     throw new Exception(Ui.INVALID_CHECK_TERM_GRADE);
                 }
-            } else {
-                logger.log(Level.WARNING, "Invalid command format: {0}", line);
-                throw new Exception(Ui.INVALID_CHECK_TERM_GRADE);
+                System.out.println(GradeChecker.checkGrade(timetable, year, term));
             }
             return false;
         case "view":
             if (words.length == 1) {
                 System.out.println(PlanGetter.getPlan(timetable));
-            } else if (words.length >= 2) {
-                if (!words[1].startsWith("y/")) {
-                    throw new Exception(Ui.INVALID_VIEW_TERM_PLAN);
-                }
+            } else if (words.length == 2) {
                 try {
                     year = Integer.parseInt(words[1].substring("y/".length()));
                     if (year < 1 || year > 6) {
-                        throw new Exception(Ui.INVALID_VIEW_YEAR_PLAN);
+                        logger.log(Level.WARNING, "Year provided is not from 1 to 6");
+                        throw new Exception("Year provided is not from 1 to 6");
                     }
-                    if (words.length == 2) {
-                        System.out.println(PlanGetter.getPlan(timetable, year));
-                    } else if (words.length == 3) {
-                        if (!words[2].startsWith("t/")) {
-                            throw new Exception(Ui.INVALID_VIEW_TERM_PLAN);
-                        }
-                        term = Integer.parseInt(words[2].substring("t/".length()));
-                        if (term < 1 || term > 4) {
-                            throw new Exception(Ui.INVALID_VIEW_TERM_PLAN);
-                        }
-                        System.out.println(PlanGetter.getPlan(timetable, year, term));
-                    } else {
-                        throw new Exception(Ui.INVALID_VIEW_TERM_PLAN);
+                } catch (NumberFormatException | NullPointerException e) {
+                    throw new Exception(Ui.INVALID_VIEW_YEAR_PLAN);
+                }
+                System.out.println(PlanGetter.getPlan(timetable, year));
+            } else {
+                try {
+                    year = Integer.parseInt(words[1].substring("y/".length()));
+                    term = Integer.parseInt(words[2].substring("t/".length()));
+                    if (term < 1 || term > 4) {
+                        logger.log(Level.WARNING,"Term provided is not from 1 to 4");
+                        throw new Exception("Term provided is not from 1 to 4");
+                    }
+                    if (year < 1 || year > 6) {
+                        logger.log(Level.WARNING, "Year provided is not from 1 to 6");
+                        throw new Exception("Year provided is not from 1 to 6");
                     }
                 } catch (NumberFormatException | NullPointerException e) {
                     throw new Exception(Ui.INVALID_VIEW_TERM_PLAN);
                 }
-            } else {
-                throw new Exception(Ui.INVALID_VIEW_TERM_PLAN);
+                System.out.println(PlanGetter.getPlan(timetable, year, term));
             }
             return false;
         case "display":

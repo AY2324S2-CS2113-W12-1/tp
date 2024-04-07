@@ -8,7 +8,7 @@
 
 ### Parser component
 The Parser is essential to interpreting user commands and executing appropriate actions on the timetable. 
-This includes command parsing; breaking down user inputs into commands and parameters that PlaNus can understand and
+This includes command parsing; breaking down user inputs into commands and parameters that PlaNUS can understand and
 act upon.
 
 Parser interacts with the following classes.
@@ -124,7 +124,7 @@ needing to instantiate the class. It manages a variety of messages that inform t
 
 **Key Methods and Their Design Choices:**
 
-- `printLogo()`: Displays the PlaNus logo at startup. This method enhances brand recognition and provides a welcoming 
+- `printLogo()`: Displays the PlaNUS logo at startup. This method enhances brand recognition and provides a welcoming 
 user interface.
 
 - `printHelp()`: Lists all available commands and their syntax. This method is crucial for aiding new users in 
