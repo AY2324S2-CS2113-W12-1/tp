@@ -1,9 +1,14 @@
 package seedu.planus;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  * Represents a course taken or planned by the user
  */
 public class Course {
+    private static final Logger logger = Logger.getLogger("myLogger");
+
     private static final int TERM_PER_YEAR = 4;
     private static final int MAX_CANDIDATURE_YEAR = 6;
 
@@ -23,7 +28,12 @@ public class Course {
      * @param year Year of study that the user taken or plans to take the course
      * @param term Term that the user taken or plans to take the course
      */
-    public Course(String courseCode, String courseName, int modularCredit, int year, int term) {
+    public Course(String courseCode, String courseName, int modularCredit, int year, int term) throws Exception {
+        if (modularCredit < 0 || modularCredit > 30) {
+            logger.log(Level.WARNING, "Modular Credit provided is not from 0 to 30");
+            throw new Exception("Modular Credit provided is not from 0 to 30");
+        }
+
         this.courseCode = courseCode;
         this.courseName = courseName;
         this.modularCredit = modularCredit;
@@ -40,7 +50,7 @@ public class Course {
      * @param year Year of study that the user taken or plans to take the course
      * @param term Term that the user taken or plans to take the course
      */
-    public Course(String courseCode, String courseName, int year, int term) {
+    public Course(String courseCode, String courseName, int year, int term) throws Exception {
         this(courseCode, courseName, 4, year, term);
     }
 

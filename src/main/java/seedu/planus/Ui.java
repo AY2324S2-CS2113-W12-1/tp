@@ -39,9 +39,9 @@ public class Ui {
     public static final String INVALID_CHANGE_TIMETABLE = "To change to another timetable please enter: " +
             "change timetable [timetable index]\n e.g. change timetable 2";
     public static final String INVALID_CHANGE = "To change grade, please enter: change grade " +
-            "[course code] [letter grade]\n    e.g. change grade CS1010 A" +
+            "[course code] [letter grade]\n    e.g. change grade CS1010 A\n" +
             "To change to another timetable please enter: " +
-            "change timetable [timetable index]\n e.g. change timetable 2";
+            "change timetable [timetable index]\n    e.g. change timetable 2";
 
     public static void printLogo() {
         System.out.println(" ________  ___       ________  ________   ___  ___  ________\n" +

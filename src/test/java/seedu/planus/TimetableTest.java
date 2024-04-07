@@ -59,8 +59,8 @@ public class TimetableTest {
     @Test
     public void addGrade_success() {
         Timetable timetable = new Timetable();
-        Course course = new Course("CS1010", "Programming Methodology", 1, 1);
         try {
+            Course course = new Course("CS1010", "Programming Methodology", 1, 1);
             timetable.addCourse(course);
         } catch (Exception e) {
             throw new RuntimeException(e);
