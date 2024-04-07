@@ -263,31 +263,34 @@ public class Parser {
         case "view":
             if (words.length == 1) {
                 System.out.println(PlanGetter.getPlan(timetable));
-            } else if (words.length == 2) {
-                try {
-                    year = Integer.parseInt(words[1].substring("y/".length()));
-                    if (year < 1 || year > 6) {
-                        throw new Exception(Ui.INVALID_VIEW_YEAR_PLAN);
-                    }
-                } catch (NumberFormatException | NullPointerException e) {
-                    throw new Exception(Ui.INVALID_VIEW_YEAR_PLAN);
+            } else if (words.length >= 2) {
+                if (!words[1].startsWith("y/")) {
+                    throw new Exception(Ui.INVALID_VIEW_TERM_PLAN);
                 }
-                System.out.println(PlanGetter.getPlan(timetable, year));
-            } else {
                 try {
                     year = Integer.parseInt(words[1].substring("y/".length()));
-                    term = Integer.parseInt(words[2].substring("t/".length()));
-
                     if (year < 1 || year > 6) {
                         throw new Exception(Ui.INVALID_VIEW_YEAR_PLAN);
                     }
-                    if (term < 1 || term > 4) {
+                    if (words.length == 2) {
+                        System.out.println(PlanGetter.getPlan(timetable, year));
+                    } else if (words.length == 3) {
+                        if (!words[2].startsWith("t/")) {
+                            throw new Exception(Ui.INVALID_VIEW_TERM_PLAN);
+                        }
+                        term = Integer.parseInt(words[2].substring("t/".length()));
+                        if (term < 1 || term > 4) {
+                            throw new Exception(Ui.INVALID_VIEW_TERM_PLAN);
+                        }
+                        System.out.println(PlanGetter.getPlan(timetable, year, term));
+                    } else {
                         throw new Exception(Ui.INVALID_VIEW_TERM_PLAN);
                     }
                 } catch (NumberFormatException | NullPointerException e) {
                     throw new Exception(Ui.INVALID_VIEW_TERM_PLAN);
                 }
-                System.out.println(PlanGetter.getPlan(timetable, year, term));
+            } else {
+                throw new Exception(Ui.INVALID_VIEW_TERM_PLAN);
             }
             return false;
         case "display":
