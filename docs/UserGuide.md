@@ -78,7 +78,8 @@ Format: `add course COURSE_CODE y/YEAR t/TERM {m/MCS}`
 - TERM must span from 1 to 4, with 1 and 2 representing the normal semesters, 
   while 3 and 4 represent the special terms.
 - MCS represents the Modular Credits of the course added. This is to cater to certain courses with different credits.
-  If the user input does not include m/MCS, it will default to 4 MCS being added. 
+  If the user input does not include m/MCS, it will default to 4 MCS being added, or the number of MCS in our database
+  if the course existed. 
 
 Example of usage: `add course CS1010 y/1 t/1`
 

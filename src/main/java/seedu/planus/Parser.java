@@ -53,12 +53,12 @@ public class Parser {
             if (targetAdded.equalsIgnoreCase("course")) {
                 Course newCourse;
                 String courseCode;
+                int yearIndex = -1;
+                int termIndex = -1;
+                int mcIndex = -1;
                 try {
                     courseCode = words[2].trim().toUpperCase();
                     mc = 4;
-                    int yearIndex = -1;
-                    int termIndex = -1;
-                    int mcIndex = -1;
                     for (int i = 3; i < words.length; i++) {
                         if (words[i].startsWith("y/")) {
                             yearIndex = i;
@@ -72,6 +72,10 @@ public class Parser {
                     if (mcIndex != -1) {
                         mc = Integer.parseInt(words[mcIndex].substring("m/".length()).trim());
                     }
+                    if (mc < 0 || mc > 30) {
+                        logger.log(Level.WARNING, "Modular Credit provided is not from 0 to 30");
+                        throw new Exception("Modular Credit provided is not from 0 to 30");
+                    }
                     year = Integer.parseInt(words[yearIndex].substring("y/".length()).trim());
                     term = Integer.parseInt(words[termIndex].substring("t/".length()).trim());
                 } catch (NumberFormatException | IndexOutOfBoundsException | NullPointerException e) {
@@ -80,8 +84,14 @@ public class Parser {
 
                 String courseNameAndMC = Storage.searchCourse(courseCode, mc);
                 String courseName = courseNameAndMC.substring(0, courseNameAndMC.indexOf(","));
-                mc = Integer.parseInt(courseNameAndMC.substring(courseNameAndMC.indexOf(",") + 1).trim());
-                newCourse = new Course(courseCode, courseName, mc, year, term);
+                if (mcIndex == -1) {
+                    mc = Integer.parseInt(courseNameAndMC.substring(courseNameAndMC.indexOf(",") + 1).trim());
+                }
+                try {
+                    newCourse = new Course(courseCode, courseName, mc, year, term);
+                } catch (Exception e) {
+                    throw new Exception(e.getMessage());
+                }
 
                 try {
                     logger.log(Level.INFO, "Adding course to timetable");
@@ -266,6 +276,10 @@ public class Parser {
             } else if (words.length == 2) {
                 try {
                     year = Integer.parseInt(words[1].substring("y/".length()));
+                    if (year < 1 || year > 6) {
+                        logger.log(Level.WARNING, "Year provided is not from 1 to 6");
+                        throw new Exception("Year provided is not from 1 to 6");
+                    }
                 } catch (NumberFormatException | NullPointerException e) {
                     throw new Exception(Ui.INVALID_VIEW_YEAR_PLAN);
                 }
@@ -274,6 +288,14 @@ public class Parser {
                 try {
                     year = Integer.parseInt(words[1].substring("y/".length()));
                     term = Integer.parseInt(words[2].substring("t/".length()));
+                    if (term < 1 || term > 4) {
+                        logger.log(Level.WARNING,"Term provided is not from 1 to 4");
+                        throw new Exception("Term provided is not from 1 to 4");
+                    }
+                    if (year < 1 || year > 6) {
+                        logger.log(Level.WARNING, "Year provided is not from 1 to 6");
+                        throw new Exception("Year provided is not from 1 to 6");
+                    }
                 } catch (NumberFormatException | NullPointerException e) {
                     throw new Exception(Ui.INVALID_VIEW_TERM_PLAN);
                 }

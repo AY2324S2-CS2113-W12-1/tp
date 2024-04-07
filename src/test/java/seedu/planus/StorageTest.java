@@ -10,6 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
+//@@author ZhouJunmin
 public class StorageTest {
     @Test
     public void getUserTimetableFilePath_defaultTimetable() {
@@ -53,8 +54,8 @@ public class StorageTest {
     @Test
     public void writeToFile_oneCourseFile() {
         Timetable timetable = new Timetable();
-        Course course = new Course("CS1010", "Programming Methodology", 4, 1, 1);
         try {
+            Course course = new Course("CS1010", "Programming Methodology", 4, 1, 1);
             timetable.addCourse(course);
         } catch (Exception e) {
             throw new RuntimeException(e);
@@ -73,9 +74,9 @@ public class StorageTest {
     @Test
     public void writeToFile_multipleCoursesFile() {
         Timetable timetable = new Timetable();
-        Course courseOne = new Course("CS1010", "Programming Methodology", 4, 1, 1);
-        Course courseTwo = new Course("CS1010S", "Programming Methodology", 4, 1, 1);
         try {
+            Course courseOne = new Course("CS1010", "Programming Methodology", 4, 1, 1);
+            Course courseTwo = new Course("CS1010S", "Programming Methodology", 4, 1, 1);
             timetable.addCourse(courseOne);
             timetable.addCourse(courseTwo);
         } catch (Exception e) {
@@ -102,8 +103,8 @@ public class StorageTest {
     @Test
     public void loadTimetable_normalFile() {
         Timetable timetableExpected = new Timetable();
-        Course course = new Course("CS1010", "Programming Methodology", 4, 1, 1);
         try {
+            Course course = new Course("CS1010", "Programming Methodology", 4, 1, 1);
             timetableExpected.addCourse(course);
         } catch (Exception e) {
             throw new RuntimeException(e);

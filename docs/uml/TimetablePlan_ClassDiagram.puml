@@ -1,4 +1,7 @@
 @startuml
+hide circle
+skinparam classAttributeIconSize 0
+
 class Timetable {
     +addCourse(course: Course)
     +removeCourse(courseCode: String): boolean
