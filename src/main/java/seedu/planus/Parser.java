@@ -229,35 +229,41 @@ public class Parser {
         case "check":
             if (words.length == 1) {
                 System.out.println(GradeChecker.checkGrade(timetable));
-            } else if (words.length == 2) {
-                try {
-                    year = Integer.parseInt(words[1].substring("y/".length()));
-                    if (year < 1 || year > 6) {
-                        logger.log(Level.WARNING, "Year provided is not from 1 to 6");
-                        throw new Exception("Year provided is not from 1 to 6");
-                    }
-                } catch (NumberFormatException | NullPointerException e) {
+            } else if (words.length >= 2) {
+                if (!words[1].startsWith("y/")) {
                     logger.log(Level.WARNING, "Invalid command format: {0}", line);
-                    throw new Exception(Ui.INVALID_CHECK_YEAR_GRADE);
+                    throw new Exception(Ui.INVALID_CHECK_TERM_GRADE);
                 }
-                System.out.println(GradeChecker.checkGrade(timetable, year));
-            } else {
                 try {
                     year = Integer.parseInt(words[1].substring("y/".length()));
-                    term = Integer.parseInt(words[2].substring("t/".length()));
-                    if (term < 1 || term > 4) {
-                        logger.log(Level.WARNING,"Term provided is not from 1 to 4");
-                        throw new Exception("Term provided is not from 1 to 4");
-                    }
                     if (year < 1 || year > 6) {
                         logger.log(Level.WARNING, "Year provided is not from 1 to 6");
                         throw new Exception("Year provided is not from 1 to 6");
+                    }
+                    if (words.length == 2) {
+                        System.out.println(GradeChecker.checkGrade(timetable, year));
+                    } else if (words.length == 3) {
+                        if (!words[2].startsWith("t/")) {
+                            logger.log(Level.WARNING, "Invalid command format: {0}", line);
+                            throw new Exception(Ui.INVALID_CHECK_TERM_GRADE);
+                        }
+                        term = Integer.parseInt(words[2].substring("t/".length()));
+                        if (term < 1 || term > 4) {
+                            logger.log(Level.WARNING,"Term provided is not from 1 to 4");
+                            throw new Exception("Term provided is not from 1 to 4");
+                        }
+                        System.out.println(GradeChecker.checkGrade(timetable, year, term));
+                    } else {
+                        logger.log(Level.WARNING, "Invalid command format: {0}", line);
+                        throw new Exception(Ui.INVALID_CHECK_TERM_GRADE);
                     }
                 } catch (NumberFormatException | NullPointerException e) {
                     logger.log(Level.WARNING, "Invalid command format: {0}", line);
                     throw new Exception(Ui.INVALID_CHECK_TERM_GRADE);
                 }
-                System.out.println(GradeChecker.checkGrade(timetable, year, term));
+            } else {
+                logger.log(Level.WARNING, "Invalid command format: {0}", line);
+                throw new Exception(Ui.INVALID_CHECK_TERM_GRADE);
             }
             return false;
         case "view":
