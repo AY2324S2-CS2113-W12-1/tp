@@ -3,7 +3,6 @@ CS1010,Programming Methodology,4
 EG1311,Design and Make,4
 MA1511,Engineering Calculus,2
 MA1512,Differential Equation for Engineering,2
-UE,Unrestricted Elective,4
 CG2111A,Engineering Principles & Practice II,4
 DTK1234,Design Thinking,4
 MA1508E,Linear Algebra for Engineering,4
@@ -11,7 +10,6 @@ PF1101,Fundamentals of Project Management,4
 GEA1000,Quantitative Reasoning with Data,4
 CS1231,Discrete Structures,4
 CS2040C,Data Structures & Algorithms,4
-GEC1XXX,Cultures and Connections,4
 IE2141,Systems Thinking and Dynamics,4
 ES2631,Critique and Communication of Thinking and Design,4
 CG2023,Signals & Systems,4
@@ -25,11 +23,9 @@ CG2027,Transistor-level Digital Circuits,2
 CG2028,Computer Organization,2
 CG2271,Real-Time Operating Systems,4
 CDE2000,Creating Narratives,4
-GESSXXXX,Singapore Studies,4
 ST2334,Probability and Statistics,4
 CG4002,CEG Capstone Project,8
 EE4204,Computer Networks,4
-GEN1XXX,Communities & Engagement,4
 MA1513,Linear Algebra with Differential Equations,2
 BN1111,Engineering Principles and Practice I,4
 CE2407A,Engineering Uncertainty Analysis,2
@@ -57,12 +53,10 @@ CN4118,B.Eng. Dissertation,4
 CN4102,Chemical Engineering Lab,4
 CE1101,Principles of Structural and Geotechnical Engineering,4
 CE2155,Principles of Structural Mechanics and Materials,4
-CE2134,Fuild Mechanics,4
+CE2134,Fluid Mechanics,4
 CE3155A,Structural Behavior,2
 CE3155B,Structural Modelling,2
 CE3115,Stability of Slopes and Earth Retention Systems,4
-GENXXXX,Singapore Studies,4
-GESS1XXX,Communities & Engagement,4
 CE3121,Urban Transportation Engineering,4
 CE3165,Concrete Design for Urban Infrastructure,4
 CE3116,Foundation Systems for Urban Infrastructure,4
@@ -77,7 +71,6 @@ EE2012,Analytical Methods in Electrical and Computer Engineering,4
 EE2022,Electrical Energy Systems,4
 EE2027,Electronics Circuits,4
 PC2020,Electromagnetics for Electrical Engineers,4
-GE/UE,Unrestricted Elective,4
 EE2028,Microcontroller Programming and Interfacing,4
 EE4002D,Design Capstone,8
 EE4002R,Research Capstone,8
@@ -100,7 +93,6 @@ ESE3101,Resource Management and Circular Economy,4
 ESE3301,Microbiology in Natural and Built Environment,4
 ESE3201,Air Quality in Changing Environment,4
 ESE3401,Sustainable Urban Water Technology,4
-Technical Elective,Technical Elective,4
 ESE4502R,B. Eng. Dissertation,4
 IE1111R,Industrial & Systems Engineering Principles & Practice I,4
 IE2111,Industrial & Systems Engineering Principles & Practice II,4
@@ -110,9 +102,7 @@ EG2501/CDE2501,Liveable Cities,4
 IE2100,Probability Models with Applications,4
 IE3101,Statistics for Engineering Applications,4
 IE3110R,Simulation,4
-Technical Elective 1,Technical Elective,4
 IE3100R,Systems Design Project,4
-Technical Elective 2,Technical Elective,4
 ME1102,Engineering Principles & Practice I,4
 MA1505,Mathematics I,4
 ME2104,Engineering Principles & Practice II,4
@@ -122,17 +112,14 @@ ME2102,Engineering Innovation and Modelling,4
 ME2115,Mechanics of Machines,4
 ME2142,Feedback Control Systems,4
 ME2162,Manufacturing Processes,4
-ME Technical Elective 1,ME Technical Elective,4
 ME4101A,B.Eng. Dissertation,4
 MLE1001B,Materials Science & Engineering Principles & Practice I,4
 MLE2001A,Materials Science & Engineering Principles & Practice II,4
-GESS/GEC/GEN,General Education Elective,4
 MLE2102,Thermodynamics and Renewable Energy Technologies,4
 MLE2105,Electronic Properties of Materials,4
 MLE2103A,Materials Kinetics & Processing,2
 MLE3101A,Materials Characterization,3
 MLE3101,Materials Characterization Laboratory,3
-MLE Technical Elective,MLE Technical Elective,4
 MLE4101B,B.Eng. Dissertation or MLE4102A Design Project,4
 MLE3103,Materials Design: Aerospace to Biomedical Applications,4
 MLE3111A,Materials Properties and Processing Laboratory,2
