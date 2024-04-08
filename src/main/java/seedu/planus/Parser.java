@@ -3,6 +3,7 @@ package seedu.planus;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
+//@@author cirelesna
 /**
  * The Parser class handles the parsing of user commands in the PlaNus application.
  */
@@ -43,6 +44,7 @@ public class Parser {
             }
             return false;
         case "add":
+            //@@author iscyng
             String targetAdded;
             try {
                 targetAdded = words[1];
@@ -105,6 +107,7 @@ public class Parser {
                     throw new Exception(e.getMessage());
                 }
             } else if (targetAdded.equalsIgnoreCase("grade")) {
+                //@@author ZhangWenyue3325
                 boolean isAdded;
                 try {
                     logger.log(Level.INFO, "Adding grade to course");
@@ -164,6 +167,7 @@ public class Parser {
             }
             return false;
         case "move":
+            //@@author ZhouJunmin
             if (words.length < 5 || !words[0].equals("move") || !words[1].equalsIgnoreCase("course")) {
                 logger.log(Level.WARNING, "Invalid command format: move course");
                 throw new Exception(Ui.INVALID_MOVE_COURSE);
@@ -208,6 +212,7 @@ public class Parser {
             Ui.printCourseMoved(words[2].toUpperCase());
             return false;
         case "change":
+            //@@author cirelesna
             String targetChanged;
             try {
                 targetChanged = words[1];
@@ -216,16 +221,21 @@ public class Parser {
                 throw new Exception(Ui.INVALID_COMMAND);
             }
             if (targetChanged.equalsIgnoreCase("grade")) {
-                boolean isChanged;
-                try {
-                    logger.log(Level.INFO, "Changing grade from timetable");
-                    isChanged = timetable.addGrade(words[2].toUpperCase(), words[3].toUpperCase());
-                    Storage.writeToFile(timetable);
-                } catch (IndexOutOfBoundsException | NullPointerException e) {
-                    logger.log(Level.WARNING, "Invalid command format: {0}", line);
-                    throw new Exception(Ui.INVALID_CHANGE_GRADE);
+                boolean isChanged = false;
+                Grade tempGrade = new Grade(words[3].toUpperCase());
+                if (tempGrade.getLetterGrade() != null) {
+                    try {
+                        logger.log(Level.INFO, "Changing grade from timetable");
+                        isChanged = timetable.addGrade(words[2].toUpperCase(), words[3].toUpperCase());
+                    } catch (IndexOutOfBoundsException | NullPointerException e) {
+                        logger.log(Level.WARNING, "Invalid command format: {0}", line);
+                        throw new Exception(Ui.INVALID_CHANGE_GRADE);
+                    }
+                } else {
+                    Ui.printInvalidInputGrade();
                 }
                 if (isChanged) {
+                    Storage.writeToFile(timetable);
                     Ui.printGradeChanged(words[2].toUpperCase(), words[3].toUpperCase());
                 }
             } else if (targetChanged.equalsIgnoreCase("timetable")) {
@@ -283,6 +293,7 @@ public class Parser {
             }
             return false;
         case "view":
+            //@@author Hws2209
             if (words.length == 1) {
                 System.out.println(PlanGetter.getPlan(timetable));
             } else if (words.length == 2) {
@@ -331,6 +342,7 @@ public class Parser {
             }
             return false;
         case "help":
+            //@@author cirelesna
             Ui.printHelp();
             return false;
         case "bye":
