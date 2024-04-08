@@ -1,25 +1,28 @@
 @startuml
 autoactivate on
-participant ": Timetable" as timetable
-participant "courses: ArrayList<ArrayList<Course>>" as courses
+participant ": Timetable" as Timetable
+participant ": Course" as Course
 
-[-> timetable : removeCourse()
+[-> Timetable : removeCourse(courseCode)
 loop until current course matches target course code or end of list reached
-    timetable -> courses : check course code
-    deactivate courses
+    Timetable -> Timetable : courses.get(i).get(j)
+    Timetable --> Timetable : currCourse
+    Timetable -> Course : currCourse.getCourseCode()
+    Course --> Timetable : currCourseCode
+    deactivate Course
 end
 
 opt target course code found
-    timetable -> courses : remove the course from the list
-    deactivate courses
-    timetable -> courses : check size of row representing the term of the course removed
-    timetable <-- courses
-    opt row representing the term of the course removed is now empty
-        timetable -> courses : remove the row
-        deactivate courses
+    Timetable -> Timetable : courses.get(i).remove(j)
+    deactivate Timetable
+    Timetable -> Timetable : courses.get(i).isEmpty()
+    deactivate Timetable
+    opt inner ArrayList representing the term of course removed is now empty
+        Timetable -> Timetable : courses.remove(i)
+        deactivate Timetable
     end
 end
 
-[<-- timetable : whether target course code was found
-deactivate timetable
+[<-- Timetable : whether target course code was found
+deactivate Timetable
 @enduml

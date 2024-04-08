@@ -26,7 +26,7 @@ Below is the class diagram:
 ### Timetable plan component
 In order to keep track of the timetable plan of the user, 3 classes are used mainly.
 - `Course`: Represents a course taken or planned by the user
-- `Timetable`: Stores the list of courses
+- `Timetable`: Stores the list of courses as an ArrayList of ArrayList, with each inner ArrayList representing a term
 - `PlanGetter`: Provides access to the timetable plan
 
 Below is the class diagram to illustrate this:
@@ -180,12 +180,19 @@ give the user relevant course information and future course recommendations.
 
 ## Non-Functional Requirements
 
-{Give non-functional requirements}
+1. Should work on any mainstream OS as long as it has Java 11 or above installed.
+2. A user with above average typing speed for regular English text (i.e. not code, not system admin commands) 
+   should be able to accomplish most of the tasks faster using commands than using the mouse.
+3. Should be able to manage 1000 courses without a noticeable sluggishness in performance for typical usage.
+4. It should gracefully handle exceptions and edge cases to ensure uninterrupted operation.
+5. The CLI interface should be user-friendly, with clear feedback provided to guide users through various tasks.
 
 ## Glossary
 
-* *glossary item* - Definition
+* *Mainstream OS* - Windows, Linux, Unix, MacOS
 
 ## Instructions for manual testing
-
-{Give instructions on how to do a manual product testing e.g., how to load sample data to be used for testing}
+### Launch and shutdown
+1. Initial launch: Download the jar file and copy into an empty folder. Open a command terminal, `cd` into the folder 
+   you put the jar file in, and use the `java -jar PlaNUS.jar` command to run the application.
+2. Shutdown: Type `bye` in the command box and press Enter to exit the program. 
