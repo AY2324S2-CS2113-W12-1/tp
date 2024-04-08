@@ -1,19 +1,21 @@
 @startuml
 autoactivate on
-participant ": Timetable" as timetable
-participant "courses: ArrayList<ArrayList<Course>>" as courses
+participant ": Timetable" as Timetable
+participant ": Course" as Course
 
-[-> timetable : addCourse()
-loop until current row is term that new course belongs or later
-    timetable -> courses : check year and term
-    deactivate courses
+[-> Timetable : addCourse(course)
+loop until current inner ArrayList is term that new course belongs or later \n or end of courses reached
+    Timetable -> Timetable : courses.get(i).get(0)
+    Timetable --> Timetable : currCourse
+    Timetable -> Course : check year and term of currCourse
+    deactivate Course
 end
 
-opt current row is later than term of new course or last row reached
-    timetable -> courses : insert a row representing the new course's year and term
-    courses --> timetable : newly inserted row will be new "current row"
+opt current inner ArrayList is not term that new course belongs
+    Timetable -> Timetable : courses.add(i, new ArrayList<Course>()) \n (insert an ArrayList representing the new course's year and term)
+    deactivate Timetable
 end
-timetable -> courses : insert the new course at the end of the current row
-deactivate courses
-deactivate timetable
+Timetable -> Timetable : courses.get(i).add(course)
+deactivate Timetable
+[<-- Timetable
 @enduml
