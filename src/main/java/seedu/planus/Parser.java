@@ -168,6 +168,10 @@ public class Parser {
                 logger.log(Level.WARNING, "Invalid command format: move course");
                 throw new Exception(Ui.INVALID_MOVE_COURSE);
             }
+            if (! words[3].startsWith("y/") || ! words[4].startsWith("t/")) {
+                logger.log(Level.WARNING, "Invalid command format: move course");
+                throw new Exception(Ui.INVALID_MOVE_COURSE);
+            }
             Course courseToMove = null;
             String grade = null;
             boolean exists;
@@ -240,6 +244,10 @@ public class Parser {
             if (words.length == 1) {
                 System.out.println(GradeChecker.checkGrade(timetable));
             } else if (words.length == 2) {
+                if (! words[1].startsWith("y/")) {
+                    logger.log(Level.WARNING, "Invalid command format: {0}", line);
+                    throw new Exception(Ui.INVALID_CHECK_YEAR_GRADE);
+                }
                 try {
                     year = Integer.parseInt(words[1].substring("y/".length()));
                     if (year < 1 || year > 6) {
@@ -252,6 +260,10 @@ public class Parser {
                 }
                 System.out.println(GradeChecker.checkGrade(timetable, year));
             } else {
+                if (! words[1].startsWith("y/") || ! words[2].startsWith("t/")) {
+                    logger.log(Level.WARNING, "Invalid command format: {0}", line);
+                    throw new Exception(Ui.INVALID_CHECK_TERM_GRADE);
+                }
                 try {
                     year = Integer.parseInt(words[1].substring("y/".length()));
                     term = Integer.parseInt(words[2].substring("t/".length()));
@@ -274,6 +286,10 @@ public class Parser {
             if (words.length == 1) {
                 System.out.println(PlanGetter.getPlan(timetable));
             } else if (words.length == 2) {
+                if (! words[1].startsWith("y/")) {
+                    logger.log(Level.WARNING, "Invalid command format: {0}", line);
+                    throw new Exception(Ui.INVALID_VIEW_YEAR_PLAN);
+                }
                 try {
                     year = Integer.parseInt(words[1].substring("y/".length()));
                     if (year < 1 || year > 6) {
@@ -285,6 +301,10 @@ public class Parser {
                 }
                 System.out.println(PlanGetter.getPlan(timetable, year));
             } else {
+                if (! words[1].startsWith("y/") || ! words[2].startsWith("t/")) {
+                    logger.log(Level.WARNING, "Invalid command format: {0}", line);
+                    throw new Exception(Ui.INVALID_VIEW_TERM_PLAN);
+                }
                 try {
                     year = Integer.parseInt(words[1].substring("y/".length()));
                     term = Integer.parseInt(words[2].substring("t/".length()));
