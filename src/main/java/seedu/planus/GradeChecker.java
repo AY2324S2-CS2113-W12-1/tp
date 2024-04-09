@@ -1,6 +1,7 @@
 //@@author ZhangWenyue3325
 package seedu.planus;
 
+import java.util.ArrayList;
 import java.util.logging.Logger;
 
 public class GradeChecker {
@@ -22,10 +23,11 @@ public class GradeChecker {
         double totalGrade = 0.00;
         double yearGrade = 0.00;
         double termGrade = 0.00;
+        int maxYear = Math.max(findMaxYear(timetable), 4);
 
         StringBuilder plan = new StringBuilder();
 
-        for (int y = 1; y <= MAX_CANDIDATURE_YEAR; y++) {
+        for (int y = 1; y <= maxYear; y++) {
             plan.append("Year ").append(y).append(":").append(System.lineSeparator());
 
             for (int t = 1; t <= TERM_PER_YEAR; t++) {
@@ -198,5 +200,17 @@ public class GradeChecker {
                 .append("-----------------------------").append(System.lineSeparator());
 
         return plan.toString();
+    }
+
+    private static int findMaxYear(Timetable timetable) {
+        int maxYear = 0;
+        for (ArrayList<Course> termCourses : timetable.courses) {
+            for (Course course : termCourses) {
+                if (course.getYear() > maxYear) {
+                    maxYear = course.getYear();
+                }
+            }
+        }
+        return maxYear;
     }
 }
