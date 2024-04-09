@@ -6,6 +6,10 @@
 
 ## Design & implementation
 
+### System Architecture
+
+![PlaNus_ArchitectureDiagram](uml/PlaNus_ArchitectureDiagram.png)
+
 ### Parser component
 The Parser is essential to interpreting user commands and executing appropriate actions on the timetable. 
 This includes command parsing; breaking down user inputs into commands and parameters that PlaNUS can understand and
