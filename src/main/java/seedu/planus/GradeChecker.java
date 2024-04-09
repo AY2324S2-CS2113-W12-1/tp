@@ -58,7 +58,7 @@ public class GradeChecker {
                     termGPA = termGrade / termMCsWithoutSU;
                 }
 
-                plan.append("Term GPA: ").append(termGPA).append(System.lineSeparator())
+                plan.append("Term GPA: ").append(String.format("%.2f", termGPA)).append(System.lineSeparator())
                         .append("-----------------------------").append(System.lineSeparator());
 
                 yearMCsWithoutSU += termMCsWithoutSU;
@@ -72,8 +72,8 @@ public class GradeChecker {
                 yearGPA = yearGrade / yearMCsWithoutSU;
             }
 
-            plan.append("Year ").append(y).append(" GPA: ").append(yearGPA).append(System.lineSeparator())
-                    .append(System.lineSeparator());
+            plan.append("Year ").append(y).append(" GPA: ").append(String.format("%.2f", yearGPA))
+                    .append(System.lineSeparator()).append(System.lineSeparator());
 
             totalMCsWithoutSU += yearMCsWithoutSU;
             totalGrade += yearGrade;
@@ -86,7 +86,8 @@ public class GradeChecker {
             cumulativeGPA = totalGrade / totalMCsWithoutSU;
         }
         assert cumulativeGPA >= 0.00 && cumulativeGPA <= 5.00 : "Cumulative GPA is out of bounds.";
-        plan.append("Total GPA: ").append(cumulativeGPA).append(System.lineSeparator()).append(System.lineSeparator());
+        plan.append("Total GPA: ").append(String.format("%.2f", cumulativeGPA)).append(System.lineSeparator())
+                .append(System.lineSeparator());
 
         return plan.toString();
     }
@@ -137,7 +138,7 @@ public class GradeChecker {
                 termGPA = termGrade / termMCsWithoutSU;
             }
 
-            plan.append("Term GPA: ").append(termGPA).append(System.lineSeparator())
+            plan.append("Term GPA: ").append(String.format("%.2f", termGPA)).append(System.lineSeparator())
                     .append("-----------------------------").append(System.lineSeparator());
 
             yearMCsWithoutSU += termMCsWithoutSU;
@@ -152,8 +153,8 @@ public class GradeChecker {
         }
         assert yearGPA >= 0.00 : "The GPA for the given academic year should be non-negative.";
 
-        plan.append("Year ").append(year).append(" GPA: ").append(yearGPA).append(System.lineSeparator())
-                .append(System.lineSeparator());
+        plan.append("Year ").append(year).append(" GPA: ").append(String.format("%.2f", yearGPA))
+                .append(System.lineSeparator()).append(System.lineSeparator());
 
         return plan.toString();
     }
@@ -196,7 +197,7 @@ public class GradeChecker {
         }
         assert termGPA >= 0.00 : "The GPA of the semester should be non-negative.";
 
-        plan.append("Term GPA: ").append(termGPA).append(System.lineSeparator())
+        plan.append("Term GPA: ").append(String.format("%.2f", termGPA)).append(System.lineSeparator())
                 .append("-----------------------------").append(System.lineSeparator());
 
         return plan.toString();

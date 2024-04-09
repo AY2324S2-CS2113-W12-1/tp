@@ -51,15 +51,15 @@ public class GradeCheckerTest {
                 "  CG1111A: B",
                 "  MA1511: C",
                 "  MA1512: S",
-                "Term GPA: 3.8",
+                "Term GPA: 3.80",
                 "-----------------------------",
                 "Year 1 Semester 2:",
                 "  DTK1234: A+",
                 "  PF1101: B+",
                 "  CG2111A: A-",
-                "Term GPA: 4.5",
+                "Term GPA: 4.50",
                 "-----------------------------",
-                "Year 1 GPA: 4.181818181818182",
+                "Year 1 GPA: 4.18",
                 "",
                 ""
         );
