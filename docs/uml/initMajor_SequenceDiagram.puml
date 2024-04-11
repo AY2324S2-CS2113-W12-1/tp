@@ -1,0 +1,23 @@
+@startuml
+participant PlaNus
+participant "Parser" as Parser
+participant "Storage" as Storage
+
+PlaNus -> Parser : parseCommand("init MAJOR", timetable)
+activate Parser
+
+Parser -> Storage : loadTimetable("MAJOR")
+activate Storage
+Storage --> Parser : newTimetable
+deactivate Storage
+
+Parser -> Storage : writeToFile(newTimetable)
+activate Storage
+Storage --> Parser : success
+deactivate Storage
+
+Parser -> PlaNus : false
+
+
+deactivate Parser
+@enduml

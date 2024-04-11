@@ -27,6 +27,12 @@ Below is the class diagram:
 
 <br>
 
+When 'init MAJOR' is entered by user the interaction between classes is shown below. 
+
+![initMajor_SequenceDiagram.png](uml%2FinitMajor_SequenceDiagram.png)
+
+<br>
+
 ### Timetable plan component
 In order to keep track of the timetable plan of the user, 3 classes are used mainly.
 - `Course`: Represents a course taken or planned by the user
