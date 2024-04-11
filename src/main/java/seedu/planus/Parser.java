@@ -87,6 +87,10 @@ public class Parser {
                             "and (optional)modular credits (0-30) to add course");
                 }
 
+                if (courseCode.contains(",")) {
+                    throw new Exception(Ui.COMMA_IN_COURSE_CODE);
+                }
+
                 String courseNameAndMC = Storage.searchCourse(courseCode, mc);
                 String courseName = courseNameAndMC.substring(0, courseNameAndMC.indexOf(","));
                 if (mcIndex == -1) {

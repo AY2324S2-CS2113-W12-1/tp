@@ -43,6 +43,8 @@ public class Ui {
             "To change to another timetable please enter: " +
             "change timetable [timetable index]\n    e.g. change timetable 2";
 
+    public static final String COMMA_IN_COURSE_CODE = "Please provide course code with no \",\" inside";
+
     public static void printLogo() {
         System.out.println(" ________  ___       ________  ________   ___  ___  ________\n" +
                 "|\\   __  \\|\\  \\     |\\   __  \\|\\   ___  \\|\\  \\|\\  \\|\\   ____\\\n" +
@@ -172,6 +174,10 @@ public class Ui {
         System.out.println("This course has already been added.\n" +
                 "If you want to add this course elsewhere, please use \"move\" command.\n" +
                 "    e.g. move course DTK1234 y/4 t/1");
+    }
+
+    public static void printCommaInInputCourseName() {
+        System.out.println("Please re-enter course name ONLY with no \",\" inside:");
     }
 
     //@@author cirelesna
