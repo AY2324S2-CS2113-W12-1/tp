@@ -1,34 +1,40 @@
 @startuml
+autoactivate on
 
 participant ":PlaNUS" #orange
 participant Storage << class >> #lightYellow
 participant Ui << class >> #lightGreen
 participant Parser << class >> #lightBlue
 
+activate ":PlaNUS"
+
 ":PlaNUS" -> Storage: loadTimetable()
-alt "timetable file not found"
-Storage -> Storage: createFile("myTimetable")
+opt "timetable file not found"
+    Storage -> Storage: createFile("myTimetable")
 end
 Storage --> ":PlaNUS": timetable: Timetable
+
 loop "isExit is false"
-":PlaNUS" -> Ui: getUserCommand()
-Ui --> ":PlaNUS": line: String
-":PlaNUS" -> Parser: parseCommand(line: String, timetable: Timetable)
-alt "if initialise from recommended timetable"
-Parser -> Storage: loadTimetable(major: String)
-alt "timetable file not found"
-Storage -> Storage: createFile(major: String)
+    ":PlaNUS" -> Ui: getUserCommand()
+    Ui --> ":PlaNUS": line: String
+    ":PlaNUS" -> Parser: parseCommand(line: String, timetable: Timetable)
+    opt "if initialise from recommended timetable"
+        Parser -> Storage: loadTimetable(major: String)
+        opt "timetable file not found"
+            Storage -> Storage: createFile(major: String)
+        end
+        Storage --> Parser: newTimetable: Timetable
+    end
+    opt "changes made to timetable"
+        Parser -> Storage: writeToFile(timetable: Timetable)
+        opt "timetable file not found"
+            Storage -> Storage: createFile("myTimetable")
+        end
+        Storage --> Parser
+    end
+    Parser --> ":PlaNUS": isExit: Boolean
 end
-Storage --> Parser: newTimetable: Timetable
-end
-alt "changes made to timetable"
-Parser -> Storage: writeToFile(timetable: Timetable)
-alt "timetable file not found"
-Storage -> Storage: createFile("myTimetable")
-end
-Storage --> Parser
-end
-Parser --> ":PlaNUS": isExit: Boolean
-end
+
+deactivate ":PlaNUS"
 
 @enduml

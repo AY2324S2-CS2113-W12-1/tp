@@ -77,14 +77,19 @@ while the second and the third only pick out the specified year or term.
 In order to store user data and load different data files for course planning, 
 PlaNUS uses Storage class for this purpose.
 
-Storage has two main file access APIs:
+Storage has three main file access APIs:
 - `writeToFile(Timetable)`:
   - Take in a timetable containing courses, then write courses to the user data file at __./data/myTimetable.csv__.
-    - Params: timetable – A table containing all courses of the user.
+    - Param: timetable – A table containing all courses of the user.
 - `Timetable loadTimetable(String)`:
   - Take in a file name, then load the file containing all courses of the major/user to a Timetable object.
-    - Params: timetableName – The name of the file containing all courses of the major/user. e.g. timetableName of "CEG" indicating the recommended timetable of Computer Engineering, while timetableName of "myTimetable" indicating the timetable of the user.
+    - Param: timetableName – The name of the file containing all courses of the major/user. e.g. timetableName of "CEG" indicating the recommended timetable of Computer Engineering, while timetableName of "myTimetable" indicating the timetable of the user.
     - Returns: A timetable object that is loaded from the given file.
+- `searchCourse(String, Integer)`:
+  - Searches the name and MCs of the course in __CourseList.csv file__, given the course code and user-input MCs.
+    - Param: courseCode - String representing the course code of the course.
+    - Param: MCs - Integer representing the modular credits of the course.
+    - Returns: String representing the name and MCs of the course searched given the course code and user-input MCs.
 
 If target file is not found, the above two methods will be able to create the missing file.
 
