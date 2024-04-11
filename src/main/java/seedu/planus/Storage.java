@@ -222,6 +222,7 @@ public class Storage {
             }
         }
 
+        Ui.printCourseNotExist();
         courseName = requireCourseName();
         String course = courseCode + "," + courseName + "," + MCs + System.lineSeparator();
         Storage.writeToCourseList(course);
@@ -229,9 +230,14 @@ public class Storage {
     }
 
     private static String requireCourseName() {
-        Ui.printCourseNotExist();
+        String inputCourseName;
         Scanner in = new Scanner(System.in);
-        return in.nextLine();
+        inputCourseName = in.nextLine();
+        if (inputCourseName.contains(",")) {
+            Ui.printCommaInInputCourseName();
+            return requireCourseName();
+        }
+        return inputCourseName;
     }
 
     /**
