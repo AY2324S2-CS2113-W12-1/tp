@@ -80,8 +80,11 @@ public class Parser {
                     }
                     year = Integer.parseInt(words[yearIndex].substring("y/".length()).trim());
                     term = Integer.parseInt(words[termIndex].substring("t/".length()).trim());
-                } catch (NumberFormatException | IndexOutOfBoundsException | NullPointerException e) {
+                } catch (IndexOutOfBoundsException | NullPointerException e) {
                     throw new Exception(Ui.INVALID_ADD_COURSE);
+                } catch (NumberFormatException ex) {
+                    throw new Exception("Please provide a valid year (1-6), term (1-4) " +
+                            "and (optional)modular credits (0-30) to add course");
                 }
 
                 String courseNameAndMC = Storage.searchCourse(courseCode, mc);
@@ -176,6 +179,12 @@ public class Parser {
                 logger.log(Level.WARNING, "Invalid command format: move course");
                 throw new Exception(Ui.INVALID_MOVE_COURSE);
             }
+            try {
+                year = Integer.parseInt(words[3].substring("y/".length()).trim());
+                term = Integer.parseInt(words[4].substring("t/".length()).trim());
+            }  catch (NumberFormatException e) {
+                throw new Exception("Please provide a valid year (1-6) and term (1-4) to move course");
+            }
             Course courseToMove = null;
             String grade = null;
             boolean exists;
@@ -193,8 +202,6 @@ public class Parser {
             }
             try {
                 logger.log(Level.INFO, "Re-adding course to timetable");
-                year = Integer.parseInt(words[3].substring("y/".length()).trim());
-                term = Integer.parseInt(words[4].substring("t/".length()).trim());
                 String courseNameAndMC = Storage.searchCourse(words[2].toUpperCase(), mc);
                 String courseName = courseNameAndMC.substring(0, courseNameAndMC.indexOf(","));
                 mc = Integer.parseInt(courseNameAndMC.substring(courseNameAndMC.indexOf(",") + 1).trim());

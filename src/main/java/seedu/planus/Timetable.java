@@ -27,13 +27,14 @@ public class Timetable {
      * @throws Exception When the year or term specified is not within acceptable range
      */
     public boolean addCourse(Course course) throws Exception {
-        if (course.getTerm() < 1 || course.getTerm() > TERM_PER_YEAR) {
-            logger.log(Level.WARNING, course.toString() + ": Term provided is not from 1 to 4");
-            throw new Exception("Term provided is not from 1 to 4");
-        }
+
         if (course.getYear() < 1 || course.getYear() > MAX_CANDIDATURE_YEAR) {
             logger.log(Level.WARNING, course.toString() + ": Year provided is not from 1 to 6");
             throw new Exception("Year provided is not from 1 to 6");
+        }
+        if (course.getTerm() < 1 || course.getTerm() > TERM_PER_YEAR) {
+            logger.log(Level.WARNING, course.toString() + ": Term provided is not from 1 to 4");
+            throw new Exception("Term provided is not from 1 to 4");
         }
 
         //check if the course is already added to avoid duplicated courses in the timetable
