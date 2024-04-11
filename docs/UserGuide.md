@@ -89,18 +89,18 @@ Example of usage: `add course CFG1002 y/1 t/1 m/2`
 
 <br>
 
-### Moving a course to a different term: `move course`
-Moves an existing course to the specified term.
-
-Format: `move course COURSE_CODE y/YEAR t/TERM`
-- YEAR represents the year of study of the user.
-  It must be a positive integer from 1 to 6, which is the maximum candidature period.
-- TERM must span from 1 to 4, with 1 and 2 representing the normal semesters,
-  while 3 and 4 represent the special terms
-
-Example of usage: `move course MA1512 y/1 t/2`
-
-<br>
+### Moving a course to a different term: `move course` 
+Moves an existing course to the specified term. 
+ 
+Format: `move course COURSE_CODE y/YEAR t/TERM` 
+- YEAR represents the year of study of the user. 
+  It must be a positive integer from 1 to 6, which is the maximum candidature period. 
+- TERM must span from 1 to 4, with 1 and 2 representing the normal semesters, 
+  while 3 and 4 represent the special terms 
+ 
+Example of usage: `move course MA1512 y/1 t/2` 
+ 
+<br> 
 
 ### Removing course from course plan: `rm course`
 Removes an existing course from the course plan.
