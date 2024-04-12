@@ -111,10 +111,10 @@ public class Timetable {
     }
 
     /**
-     * Removes a course from the timetable plan and returns the course to be removed
+     * Searches the letter grade of the course with provided course code
      *
-     * @param courseCode The code of the course to be removed
-     * @return The course to be removed
+     * @param courseCode The course code of the course to search grade from
+     * @return String representing the letter grade of the course to be searched
      */
     public String searchGrade(String courseCode) {
         String grade = null;
