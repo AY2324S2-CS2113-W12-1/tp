@@ -41,16 +41,9 @@ public class GradeChecker {
 
                 for (Course course : timetable.courses.get(index)) {
                     plan.append("  ").append(course.getGrade()).append(System.lineSeparator());
-                    if (course.getLetterGrade() == null) {
-                        continue;
-                    }
-
-                    if (!course.getLetterGrade().equals("S") && !course.getLetterGrade().equals("CS")
-                            && !course.getLetterGrade().equals("U") && !course.getLetterGrade().equals("CU")
-                            && !(course.getLetterGrade() == null)) {
-                        termMCsWithoutSU += course.getModularCredit();
-                        termGrade += course.getNumberGrade() * course.getModularCredit();
-                    }
+                    Pair<Integer, Double> MCandGrade = getMCandGrade(course);
+                    termMCsWithoutSU += MCandGrade.getKey();
+                    termGrade += MCandGrade.getValue();
                 }
 
                 double termGPA = 0.00;
@@ -121,16 +114,9 @@ public class GradeChecker {
 
             for (Course course : timetable.courses.get(index)) {
                 plan.append("  ").append(course.getGrade()).append(System.lineSeparator());
-                if (course.getLetterGrade() == null) {
-                    continue;
-                }
-
-                if (!course.getLetterGrade().equals("S") && !course.getLetterGrade().equals("CS")
-                        && !course.getLetterGrade().equals("U") && !course.getLetterGrade().equals("CU")
-                        && !(course.getLetterGrade() == null)) {
-                    termMCsWithoutSU += course.getModularCredit();
-                    termGrade += course.getNumberGrade() * course.getModularCredit();
-                }
+                Pair<Integer, Double> MCandGrade = getMCandGrade(course);
+                termMCsWithoutSU += MCandGrade.getKey();
+                termGrade += MCandGrade.getValue();
             }
 
             double termGPA = 0.00;
@@ -180,15 +166,9 @@ public class GradeChecker {
 
         for (Course course : timetable.courses.get(index)) {
             plan.append("  ").append(course.getGrade()).append(System.lineSeparator());
-            if (course.getLetterGrade() == null) {
-                continue;
-            }
-            if (!course.getLetterGrade().equals("S") && !course.getLetterGrade().equals("CS")
-                    && !course.getLetterGrade().equals("U") && !course.getLetterGrade().equals("CU")
-                    && !(course.getLetterGrade() == null)) {
-                termMCsWithoutSU += course.getModularCredit();
-                termGrade += course.getNumberGrade() * course.getModularCredit();
-            }
+            Pair<Integer, Double> MCandGrade = getMCandGrade(course);
+            termMCsWithoutSU += MCandGrade.getKey();
+            termGrade += MCandGrade.getValue();
         }
 
         double termGPA = 0.00;
@@ -201,6 +181,21 @@ public class GradeChecker {
                 .append("-----------------------------").append(System.lineSeparator());
 
         return plan.toString();
+    }
+
+    private static Pair<Integer, Double> getMCandGrade(Course course) {
+
+        if (course.getLetterGrade() == null) {
+            return new Pair<>(0, 0.00);
+        }
+
+        if (!course.getLetterGrade().equals("S") && !course.getLetterGrade().equals("CS")
+                && !course.getLetterGrade().equals("U") && !course.getLetterGrade().equals("CU")
+                && !(course.getLetterGrade() == null)) {
+            return new Pair<>(course.getModularCredit(), course.getNumberGrade() * course.getModularCredit());
+        }
+
+        return new Pair<>(0, 0.00);
     }
 
     private static int findMaxYear(Timetable timetable) {
