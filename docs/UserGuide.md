@@ -9,9 +9,11 @@ It serves as a centralized platform for our target user to manage their past, cu
 
 1. Ensure that you have Java 11 or above installed.
 2. Download the latest version of `PlaNUS.jar` from [here](https://github.com/AY2324S2-CS2113-W12-1/tp/releases).
-3. Open a command terminal, `cd` into the folder you put the jar file in, and use the `java -jar PlaNUS.jar`
+3. *For macOS users only. Please download the `data.zip` file. Unzip the file and put the data folder into the same folder 
+that contains the PlaNUS.jar file.*
+4. Open a command terminal, `cd` into the folder you put the jar file in, and use the `java -jar PlaNUS.jar`
    command to run the application.
-4. Type the command in the command box and press Enter to execute it.
+5. Type the command in the command box and press Enter to execute it.
 
 ## Features 
 
