@@ -103,7 +103,7 @@ In order to store and check the grades of courses of the user, 4 classes are use
 - `GradeChecker`: Provides access to the grades of the given period
 
 Below is the class diagram to illustrate this:
-![Grades_ClassDiagram](uml/Grades_ClassDiagram-0.png)
+![Grades_ClassDiagram](uml/Grades_ClassDiagram.png)
 
 <br>
 
